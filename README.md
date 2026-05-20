@@ -1,4 +1,4 @@
-# SimpRetro4OrganicChemistryB
+# SimpRetro4Learn
 A single-step retrosynthesis algorithm specifically tailored for teaching purposes.
 
 ## Installation
