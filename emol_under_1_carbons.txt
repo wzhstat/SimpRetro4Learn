@@ -756,3 +756,4 @@ FN1P(F)N=P(F)(F)N(F)P1F
 O[OH2+]
 [Cu][Cu+]
 O=[N+](O)O
+[Cu]I

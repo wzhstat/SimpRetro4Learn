@@ -2396,7 +2396,6 @@ N#[13C][K]
 N#C[Na]
 N#C[Au-]C#N
 C[Au]
-[Li]CC
 N#C[Ag]
 C[Fe]
 [O]N(S(=O)(=O)[O-])S(=O)(=O)[O-]
@@ -2858,3 +2857,17 @@ O=S(=O)(O[Na])C(F)(F)F
 ON=C(Cl)/C(Cl)=N/O
 NCCB(O)O
 O=[N+](O)O
+C=CBr
+[Li]C=C
+CC[Mg]Br
+C[Mg]Br
+CC(C)=O
+CCI
+CCCI
+[Cu]I
+CCCl
+CCl
+CCBr
+CBr
+C=CBr
+

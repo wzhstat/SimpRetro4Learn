@@ -79307,3 +79307,15 @@ NC(=O)c1c(CBr)no[n+]1[O-]
 O=Cc1sc(Cl)c(Cl)c1Cl
 NC(=O)c1nc[nH]c1CO
 O=[N+](O)O
+Br[Mg]c1ccccc1
+Brc1ccccc1
+CC(C)=O
+CCI
+CCCI
+[Cu]I
+CCCl
+CCl
+CCBr
+CBr
+C=CBr
+CC(C)(C)Cl

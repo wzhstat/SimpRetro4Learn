@@ -27593,3 +27593,13 @@ O=C(O)c1cn[nH]c1F
 FC(F)c1nscc1Br
 NC(=O)c1c(CBr)no[n+]1[O-]
 O=[N+](O)O
+CC(C)=O
+CCI
+CCCI
+[Cu]I
+CCCl
+CCl
+CCBr
+CBr
+C=CBr
+CC(C)(C)Cl
