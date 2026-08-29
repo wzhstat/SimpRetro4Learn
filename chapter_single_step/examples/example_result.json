@@ -1,0 +1,157 @@
+{
+  "product_input": "CCOC(=O)CC",
+  "product_canonical": "CCOC(=O)CC",
+  "requested_chapter": 7,
+  "snapshot_definition": "cumulative library-1270 templates introduced up to and including the requested chapter",
+  "library_version": "library_1270",
+  "mapping_mode": "provisional",
+  "mapping_warning": "Template-to-chapter assignments are provisional automated candidates pending human review.",
+  "stock_file": "F:\\Research_group_work\\my_research\\AI4OrganicChemistryB\\文章\\Code+Response\\SimpRetro4Learn\\chapter_single_step\\data\\emol_under_4_carbons.txt",
+  "weights": [
+    0.1,
+    0.2,
+    0.5,
+    0.0
+  ],
+  "top_k": 5,
+  "template_inventory": {
+    "available_unique_templates": 565,
+    "new_templates_at_requested_chapter": 39,
+    "compiled_templates": 563,
+    "template_compile_errors": 0
+  },
+  "execution_stats": {
+    "matching_templates": 2,
+    "template_execution_errors": 0,
+    "invalid_generated_results": 0,
+    "unique_predictions_before_top_k": 3,
+    "returned_predictions": 3,
+    "elapsed_seconds": 0.024821499828249216
+  },
+  "predictions": [
+    {
+      "reactants": [
+        "CCC(=O)O",
+        "CCO"
+      ],
+      "reactants_smiles": "CCC(=O)O.CCO",
+      "best_score": 1.866666666666667,
+      "best_score_components": {
+        "complexity_disconnection": 4.666666666666667,
+        "starting_material_availability": 7.0,
+        "ring_disconnection": 0.0,
+        "template_specificity": 1.0
+      },
+      "first_available_chapter": 7,
+      "evidence": [
+        {
+          "template_hash": "5f9bf1e3c8c223fdc96a495ad91b4400a8e885490434f5d5728a26da272f1255",
+          "template_smarts": "[C:2]-[C;H0;D3;+0:1](=[O;D1;H0:3])-[O;H0;D2;+0:5]-[C:4]>>O-[C;H0;D3;+0:1](-[C:2])=[O;D1;H0:3].[C:4]-[OH;D1;+0:5]",
+          "intro_chapter": 7,
+          "instance_count": 1,
+          "reaction_family": "esterification",
+          "candidate_core_reaction_ids": "PDF-103 | PDF-104 | XLSX-001 | XLSX-002 | XLSX-003 | XLSX-004 | XLSX-005",
+          "candidate_core_reaction_names": "PDF-103:醇与酰氯反应 | PDF-104:醇与酸的酯化反应 | XLSX-001:醇的酯化反应 | XLSX-002:醇与羧酸衍生物反应 | XLSX-003:醇与羧酸衍生物反应 | XLSX-004:醇与羧酸衍生物反应 | XLSX-005:醇与羧酸衍生物反应",
+          "conditions": "H+",
+          "mapping_confidence": "low",
+          "mapping_status": "pending",
+          "score": 1.866666666666667,
+          "score_components": {
+            "complexity_disconnection": 4.666666666666667,
+            "starting_material_availability": 7.0,
+            "ring_disconnection": 0.0,
+            "template_specificity": 1.0
+          }
+        }
+      ],
+      "rank": 1,
+      "policy_probability": 0.76378059010081,
+      "template_support_count": 1,
+      "reaction_families": [
+        "esterification"
+      ]
+    },
+    {
+      "reactants": [
+        "CCC(=O)OCCBr"
+      ],
+      "reactants_smiles": "CCC(=O)OCCBr",
+      "best_score": 0.0,
+      "best_score_components": {
+        "complexity_disconnection": 0.0,
+        "starting_material_availability": 0.0,
+        "ring_disconnection": 0.0,
+        "template_specificity": 0.5
+      },
+      "first_available_chapter": 4,
+      "evidence": [
+        {
+          "template_hash": "b367290378e0008f7572e527bed3955ea4ec353baffa959895208012d8cb9607",
+          "template_smarts": "[C:2]-[CH3;D1;+0:1]>>Br-[CH2;D2;+0:1]-[C:2]",
+          "intro_chapter": 4,
+          "instance_count": 2,
+          "reaction_family": "halide_reduction",
+          "candidate_core_reaction_ids": "PDF-033 | PDF-030 | PDF-031 | PDF-007 | PDF-010 | PDF-011 | PDF-019 | PDF-032",
+          "candidate_core_reaction_names": "PDF-033:卤代烷被Zn+HCl还原 | PDF-030:卤代烷被LiAlH4还原（一级） | PDF-031:卤代烷被NaBH4还原（二、三级） | PDF-007:卤代烃的亲核取代(SN2, SN1) | PDF-010:卤代烃的消除反应(E2) | PDF-011:卤代烃的消除反应(E1) | PDF-019:格式试剂作为亲核试剂反应(丙烯基卤代烃） | PDF-032:卤代烷通过催化加氢还原",
+          "conditions": "H2, Pd, CaCO3 | Zn, HCl",
+          "mapping_confidence": "low",
+          "mapping_status": "pending",
+          "score": 0.0,
+          "score_components": {
+            "complexity_disconnection": 0.0,
+            "starting_material_availability": 0.0,
+            "ring_disconnection": 0.0,
+            "template_specificity": 0.5
+          }
+        }
+      ],
+      "rank": 2,
+      "policy_probability": 0.11810970494959498,
+      "template_support_count": 1,
+      "reaction_families": [
+        "halide_reduction"
+      ]
+    },
+    {
+      "reactants": [
+        "CCOC(=O)CCBr"
+      ],
+      "reactants_smiles": "CCOC(=O)CCBr",
+      "best_score": 0.0,
+      "best_score_components": {
+        "complexity_disconnection": 0.0,
+        "starting_material_availability": 0.0,
+        "ring_disconnection": 0.0,
+        "template_specificity": 0.5
+      },
+      "first_available_chapter": 4,
+      "evidence": [
+        {
+          "template_hash": "b367290378e0008f7572e527bed3955ea4ec353baffa959895208012d8cb9607",
+          "template_smarts": "[C:2]-[CH3;D1;+0:1]>>Br-[CH2;D2;+0:1]-[C:2]",
+          "intro_chapter": 4,
+          "instance_count": 2,
+          "reaction_family": "halide_reduction",
+          "candidate_core_reaction_ids": "PDF-033 | PDF-030 | PDF-031 | PDF-007 | PDF-010 | PDF-011 | PDF-019 | PDF-032",
+          "candidate_core_reaction_names": "PDF-033:卤代烷被Zn+HCl还原 | PDF-030:卤代烷被LiAlH4还原（一级） | PDF-031:卤代烷被NaBH4还原（二、三级） | PDF-007:卤代烃的亲核取代(SN2, SN1) | PDF-010:卤代烃的消除反应(E2) | PDF-011:卤代烃的消除反应(E1) | PDF-019:格式试剂作为亲核试剂反应(丙烯基卤代烃） | PDF-032:卤代烷通过催化加氢还原",
+          "conditions": "H2, Pd, CaCO3 | Zn, HCl",
+          "mapping_confidence": "low",
+          "mapping_status": "pending",
+          "score": 0.0,
+          "score_components": {
+            "complexity_disconnection": 0.0,
+            "starting_material_availability": 0.0,
+            "ring_disconnection": 0.0,
+            "template_specificity": 0.5
+          }
+        }
+      ],
+      "rank": 3,
+      "policy_probability": 0.11810970494959498,
+      "template_support_count": 1,
+      "reaction_families": [
+        "halide_reduction"
+      ]
+    }
+  ]
+}
