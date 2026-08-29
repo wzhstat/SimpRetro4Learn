@@ -1,0 +1,29 @@
+﻿_id,reaction_id,reaction_name,r_group_selection,reactant,product,condition,source,chapter
+DEMO-01-001,DEMO-01,Acyl chloride hydrolysis,R=methyl,CC(=O)Cl.O,CC(=O)O,H2O; aqueous work-up,Example textbook p.123,7
+DEMO-01-002,DEMO-01,Acyl chloride hydrolysis,R=primary,CCC(=O)Cl.O,CCC(=O)O,H2O; aqueous work-up,Example textbook p.123,7
+DEMO-01-003,DEMO-01,Acyl chloride hydrolysis,R=secondary,CC(C)C(=O)Cl.O,CC(C)C(=O)O,H2O; aqueous work-up,Example textbook p.123,7
+DEMO-01-004,DEMO-01,Acyl chloride hydrolysis,R=tertiary,CC(C)(C)C(=O)Cl.O,CC(C)(C)C(=O)O,H2O; aqueous work-up,Example textbook p.123,7
+DEMO-01-005,DEMO-01,Acyl chloride hydrolysis,R=aryl,O=C(Cl)c1ccccc1.O,O=C(O)c1ccccc1,H2O; aqueous work-up,Example textbook p.123,7
+DEMO-02-001,DEMO-02,Primary alcohol oxidation,R=methyl,CCO,CC=O,PCC; CH2Cl2,Example textbook p.156,8
+DEMO-02-002,DEMO-02,Primary alcohol oxidation,R=primary,CCCO,CCC=O,PCC; CH2Cl2,Example textbook p.156,8
+DEMO-02-003,DEMO-02,Primary alcohol oxidation,R=secondary,CC(C)CO,CC(C)C=O,PCC; CH2Cl2,Example textbook p.156,8
+DEMO-02-004,DEMO-02,Primary alcohol oxidation,R=tertiary,CC(C)(C)CO,CC(C)(C)C=O,PCC; CH2Cl2,Example textbook p.156,8
+DEMO-02-005,DEMO-02,Primary alcohol oxidation,R=aryl,OCc1ccccc1,O=Cc1ccccc1,PCC; CH2Cl2,Example textbook p.156,8
+DEMO-03-001,DEMO-03,Fischer esterification,R1=methyl;R2=methyl,CC(=O)O.CO,COC(C)=O,H2SO4; heat,Example textbook p.130,7
+DEMO-03-002,DEMO-03,Fischer esterification,R1=methyl;R2=primary,CC(=O)O.CCO,CCOC(C)=O,H2SO4; heat,Example textbook p.130,7
+DEMO-03-003,DEMO-03,Fischer esterification,R1=methyl;R2=secondary,CC(=O)O.CC(C)O,CC(=O)OC(C)C,H2SO4; heat,Example textbook p.130,7
+DEMO-03-004,DEMO-03,Fischer esterification,R1=primary;R2=methyl,CCC(=O)O.CO,CCC(=O)OC,H2SO4; heat,Example textbook p.130,7
+DEMO-03-005,DEMO-03,Fischer esterification,R1=primary;R2=primary,CCC(=O)O.CCO,CCOC(=O)CC,H2SO4; heat,Example textbook p.130,7
+DEMO-03-006,DEMO-03,Fischer esterification,R1=primary;R2=secondary,CC(C)O.CCC(=O)O,CCC(=O)OC(C)C,H2SO4; heat,Example textbook p.130,7
+DEMO-03-007,DEMO-03,Fischer esterification,R1=aryl;R2=methyl,CO.O=C(O)c1ccccc1,COC(=O)c1ccccc1,H2SO4; heat,Example textbook p.130,7
+DEMO-03-008,DEMO-03,Fischer esterification,R1=aryl;R2=primary,CCO.O=C(O)c1ccccc1,CCOC(=O)c1ccccc1,H2SO4; heat,Example textbook p.130,7
+DEMO-03-009,DEMO-03,Fischer esterification,R1=aryl;R2=secondary,CC(C)O.O=C(O)c1ccccc1,CC(C)OC(=O)c1ccccc1,H2SO4; heat,Example textbook p.130,7
+DEMO-04-001,DEMO-04,Alkene hydrogenation,R1=methyl;R2=methyl,CC=CC,CCCC,H2; Pd/C,Example textbook p.88,5
+DEMO-04-002,DEMO-04,Alkene hydrogenation,R1=methyl;R2=primary,CC=CCC,CCCCC,H2; Pd/C,Example textbook p.88,5
+DEMO-04-003,DEMO-04,Alkene hydrogenation,R1=methyl;R2=aryl,CC=Cc1ccccc1,CCCc1ccccc1,H2; Pd/C,Example textbook p.88,5
+DEMO-04-004,DEMO-04,Alkene hydrogenation,R1=primary;R2=methyl,CC=CCC,CCCCC,H2; Pd/C,Example textbook p.88,5
+DEMO-04-005,DEMO-04,Alkene hydrogenation,R1=primary;R2=primary,CCC=CCC,CCCCCC,H2; Pd/C,Example textbook p.88,5
+DEMO-04-006,DEMO-04,Alkene hydrogenation,R1=primary;R2=aryl,CCC=Cc1ccccc1,CCCCc1ccccc1,H2; Pd/C,Example textbook p.88,5
+DEMO-04-007,DEMO-04,Alkene hydrogenation,R1=aryl;R2=methyl,CC=Cc1ccccc1,CCCc1ccccc1,H2; Pd/C,Example textbook p.88,5
+DEMO-04-008,DEMO-04,Alkene hydrogenation,R1=aryl;R2=primary,CCC=Cc1ccccc1,CCCCc1ccccc1,H2; Pd/C,Example textbook p.88,5
+DEMO-04-009,DEMO-04,Alkene hydrogenation,R1=aryl;R2=aryl,C(=Cc1ccccc1)c1ccccc1,c1ccc(CCc2ccccc2)cc1,H2; Pd/C,Example textbook p.88,5

@@ -1,0 +1,5 @@
+reaction_id,reaction_name,reaction,R1,R2,atom_source,condition,source,chapter
+DEMO-01,Acyl chloride hydrolysis,[R]C(Cl)=O>>[R]C(O)=O,methyl;primary;secondary;tertiary;aryl,,O,H2O; aqueous work-up,Example textbook p.123,7
+DEMO-02,Primary alcohol oxidation,[R]CO>>[R]C=O,methyl;primary;secondary;tertiary;aryl,,,PCC; CH2Cl2,Example textbook p.156,8
+DEMO-03,Fischer esterification,[R1]C(O)=O.[R2]O>>[R1]C(O[R2])=O,methyl;primary;aryl,methyl;primary;secondary,,H2SO4; heat,Example textbook p.130,7
+DEMO-04,Alkene hydrogenation,[R1]C=C[R2]>>[R1]CC[R2],methyl;primary;aryl,methyl;primary;aryl,,H2; Pd/C,Example textbook p.88,5
