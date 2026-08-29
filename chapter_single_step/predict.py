@@ -212,11 +212,8 @@ class CurriculumSingleStepPredictor:
                     "intro_chapter": int(record["intro_chapter"]),
                     "instance_count": int(record["instance_count"]),
                     "reaction_family": record.get("reaction_family", ""),
-                    "candidate_core_reaction_ids": record.get("candidate_core_reaction_ids", ""),
-                    "candidate_core_reaction_names": record.get("candidate_core_reaction_names", ""),
+                    "core_reaction_ids": record.get("core_reaction_ids", ""),
                     "conditions": record.get("conditions", ""),
-                    "mapping_confidence": record.get("mapping_confidence", ""),
-                    "mapping_status": record.get("mapping_status", ""),
                     "score": float(score),
                     "score_components": components,
                 }
@@ -269,9 +266,7 @@ class CurriculumSingleStepPredictor:
                 "cumulative library-1270 templates introduced up to and including the requested chapter"
             ),
             "library_version": "library_1270",
-            "mapping_mode": self.dataset.get("mapping_mode", "unknown"),
-            "mapping_warning": self.dataset.get("mapping_warning", ""),
-            "stock_file": str(self.stock_path),
+            "stock_file": self.stock_path.name,
             "weights": list(self.weights),
             "top_k": top_k,
             "template_inventory": {
@@ -303,8 +298,6 @@ def print_predictions(result: dict[str, Any]) -> None:
         f"Templates: {result['template_inventory']['available_unique_templates']}; "
         f"unique predictions: {result['execution_stats']['unique_predictions_before_top_k']}"
     )
-    if result["mapping_mode"] != "verified":
-        print(f"WARNING: {result['mapping_warning']}")
     if not result["predictions"]:
         print("No valid single-step precursor prediction was found.")
         return
