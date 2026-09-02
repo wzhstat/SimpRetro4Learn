@@ -41,21 +41,25 @@ python main.py -s "CC(=O)C=C(C)C"
 
 ### Chapter-Restricted Prediction
 
-Use the cumulative library-1270 templates available by a selected chapter:
+Use only the library-1270 templates assigned to the chapters listed after `-c`:
 
 ```bash
-python chapter_single_step/predict.py -p "CCOC(=O)CC" -c 7 -k 10 -o result.json
+python chapter_single_step/predict.py -p "CCOC(=O)CC" -c 5,6,7 -k 10 -o result.json
 ```
+
+For example, `-c 1,2,3` uses Chapters 1, 2, and 3, whereas `-c 5,6,7` uses only Chapters 5, 6, and 7. It does not automatically include earlier chapters.
 
 | Parameter | Meaning |
 |---|---|
 | `-p`, `--product` | Product SMILES. The script asks for it if omitted. |
-| `-c`, `--chapter` | Cumulative chapter snapshot: 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, or 13. |
+| `-c`, `--chapters` | Comma-separated chapters from 1 to 14. Only the listed chapters are used. |
 | `-k`, `--top-k` | Number of predictions to return; default is 10. |
 | `-o`, `--output` | Optional JSON output file. |
 | `--dataset` | Optional chapter-template dataset path. |
 | `--stock` | Optional starting-material file path. |
 | `--weights CD AS RD SS` | Four ranking weights; default is `0.1 0.2 0.5 0.0`. |
+
+Chapter-by-reaction-type counts are provided in `chapter_single_step/data/chapter_reaction_template_summary.csv`; `reactions` counts curriculum core reactions, `templates` counts extracted template records, and `unique_templates` counts unique executable SMARTS.
 
 ### Advanced Run (Customizing Weights & Templates)
 You can customize the scoring weights ($w_1, w_2, w_3, w_4$) and specify your own template/condition files:
@@ -92,19 +96,19 @@ python main.py \
 
 ## Preprocessing
 
-If you wish to generate a template using your own dataset, you can follow the following steps
+### ChemDraw `[R]` Template Workflow
 
-### Manual data organization
+All dependencies are installed once with `pip install -r requirements.txt` during installation.
 
-Add one generic forward reaction per row to `template_generator/demo_reactions.csv`.
+First, add one generic forward reaction per row to `template_generator/demo_reactions.csv`.
 
 | CSV column | Meaning |
 |---|---|
 | `reaction_id` | Unique reaction ID. |
 | `reaction_name` | Reaction name. |
-| `reaction` | ChemDraw reaction, e.g. `[R1]C(Cl)=O>>[R1]C(O)=O`. |
-| `R1` | Allowed classes for `[R1]`, separated by semicolons. |
-| `R2` | Allowed classes for `[R2]`, separated by semicolons.; leave blank if unused. |
+| `reaction` | ChemDraw reaction, e.g. `[R]C(Cl)=O>>[R]C(O)=O`. |
+| `R1` | Allowed classes for `[R]` or `[R1]`, separated by semicolons. |
+| `R2` | Allowed classes for `[R2]`; leave blank if unused. |
 | `atom_source` | Source of a newly added heavy atom, e.g. `O` for water. |
 | `condition` | Reaction conditions. |
 | `source` | Textbook or other reaction source. |
@@ -112,7 +116,6 @@ Add one generic forward reaction per row to `template_generator/demo_reactions.c
 
 Allowed R classes are `methyl`, `primary`, `secondary`, `tertiary`, and `aryl`.
 
-### Template extraction
 1. Expand the generic reactions:
 
 ```bash

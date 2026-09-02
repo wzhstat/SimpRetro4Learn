@@ -1,8 +1,12 @@
 {
   "product_input": "CCOC(=O)CC",
   "product_canonical": "CCOC(=O)CC",
-  "requested_chapter": 7,
-  "snapshot_definition": "cumulative library-1270 templates introduced up to and including the requested chapter",
+  "requested_chapters": [
+    5,
+    6,
+    7
+  ],
+  "snapshot_definition": "library-1270 templates assigned only to the explicitly requested chapters",
   "library_version": "library_1270",
   "stock_file": "emol_under_4_carbons.txt",
   "weights": [
@@ -13,18 +17,22 @@
   ],
   "top_k": 5,
   "template_inventory": {
-    "available_unique_templates": 565,
-    "new_templates_at_requested_chapter": 39,
-    "compiled_templates": 565,
+    "available_unique_templates": 378,
+    "unique_templates_by_requested_chapter": {
+      "5": 308,
+      "6": 31,
+      "7": 39
+    },
+    "compiled_templates": 378,
     "template_compile_errors": 0
   },
   "execution_stats": {
-    "matching_templates": 2,
+    "matching_templates": 1,
     "template_execution_errors": 0,
     "invalid_generated_results": 0,
-    "unique_predictions_before_top_k": 3,
-    "returned_predictions": 3,
-    "elapsed_seconds": 0.037476399998922716
+    "unique_predictions_before_top_k": 1,
+    "returned_predictions": 1,
+    "elapsed_seconds": 0.028056100010871887
   },
   "predictions": [
     {
@@ -60,86 +68,10 @@
         }
       ],
       "rank": 1,
-      "policy_probability": 0.76378059010081,
+      "policy_probability": 1.0,
       "template_support_count": 1,
       "reaction_families": [
         "esterification"
-      ]
-    },
-    {
-      "reactants": [
-        "CCC(=O)OCCBr"
-      ],
-      "reactants_smiles": "CCC(=O)OCCBr",
-      "best_score": 0.0,
-      "best_score_components": {
-        "complexity_disconnection": 0.0,
-        "starting_material_availability": 0.0,
-        "ring_disconnection": 0.0,
-        "template_specificity": 0.5
-      },
-      "first_available_chapter": 4,
-      "evidence": [
-        {
-          "template_hash": "b367290378e0008f7572e527bed3955ea4ec353baffa959895208012d8cb9607",
-          "template_smarts": "[C:2]-[CH3;D1;+0:1]>>Br-[CH2;D2;+0:1]-[C:2]",
-          "intro_chapter": 4,
-          "instance_count": 2,
-          "reaction_family": "halide_reduction",
-          "core_reaction_ids": "PDF-033 | PDF-030 | PDF-031 | PDF-007 | PDF-010 | PDF-011 | PDF-019 | PDF-032",
-          "conditions": "H2, Pd, CaCO3 | Zn, HCl",
-          "score": 0.0,
-          "score_components": {
-            "complexity_disconnection": 0.0,
-            "starting_material_availability": 0.0,
-            "ring_disconnection": 0.0,
-            "template_specificity": 0.5
-          }
-        }
-      ],
-      "rank": 2,
-      "policy_probability": 0.11810970494959498,
-      "template_support_count": 1,
-      "reaction_families": [
-        "halide_reduction"
-      ]
-    },
-    {
-      "reactants": [
-        "CCOC(=O)CCBr"
-      ],
-      "reactants_smiles": "CCOC(=O)CCBr",
-      "best_score": 0.0,
-      "best_score_components": {
-        "complexity_disconnection": 0.0,
-        "starting_material_availability": 0.0,
-        "ring_disconnection": 0.0,
-        "template_specificity": 0.5
-      },
-      "first_available_chapter": 4,
-      "evidence": [
-        {
-          "template_hash": "b367290378e0008f7572e527bed3955ea4ec353baffa959895208012d8cb9607",
-          "template_smarts": "[C:2]-[CH3;D1;+0:1]>>Br-[CH2;D2;+0:1]-[C:2]",
-          "intro_chapter": 4,
-          "instance_count": 2,
-          "reaction_family": "halide_reduction",
-          "core_reaction_ids": "PDF-033 | PDF-030 | PDF-031 | PDF-007 | PDF-010 | PDF-011 | PDF-019 | PDF-032",
-          "conditions": "H2, Pd, CaCO3 | Zn, HCl",
-          "score": 0.0,
-          "score_components": {
-            "complexity_disconnection": 0.0,
-            "starting_material_availability": 0.0,
-            "ring_disconnection": 0.0,
-            "template_specificity": 0.5
-          }
-        }
-      ],
-      "rank": 3,
-      "policy_probability": 0.11810970494959498,
-      "template_support_count": 1,
-      "reaction_families": [
-        "halide_reduction"
       ]
     }
   ]

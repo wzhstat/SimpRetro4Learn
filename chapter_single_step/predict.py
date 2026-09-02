@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Standalone chapter-restricted single-step retrosynthesis for library 1270."""
+"""Single-step retrosynthesis with explicitly selected course chapters."""
 
 from __future__ import annotations
 
@@ -25,8 +25,30 @@ except ModuleNotFoundError as exc:
 PACKAGE_DIR = Path(__file__).resolve().parent
 DEFAULT_DATASET = PACKAGE_DIR / "data" / "library_1270_chapter_templates.json"
 DEFAULT_STOCK = PACKAGE_DIR / "data" / "emol_under_4_carbons.txt"
-AVAILABLE_CHAPTERS = [2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+AVAILABLE_CHAPTERS = list(range(1, 15))
 DEFAULT_WEIGHTS = (0.1, 0.2, 0.5, 0.0)
+
+
+def parse_chapters(value: str) -> tuple[int, ...]:
+    """Parse a comma-separated chapter list into a sorted, unique tuple."""
+    parts = value.split(",")
+    if not parts or any(not part.strip() for part in parts):
+        raise argparse.ArgumentTypeError(
+            "chapters must be a comma-separated list, for example: 1,2,3"
+        )
+    try:
+        chapters = tuple(sorted({int(part.strip()) for part in parts}))
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError(
+            "chapters must contain integers separated by commas, for example: 5,6,7"
+        ) from exc
+    unsupported = [chapter for chapter in chapters if chapter not in AVAILABLE_CHAPTERS]
+    if unsupported:
+        raise argparse.ArgumentTypeError(
+            f"unsupported chapter(s): {', '.join(map(str, unsupported))}; "
+            f"choose chapters from {AVAILABLE_CHAPTERS[0]} to {AVAILABLE_CHAPTERS[-1]}"
+        )
+    return chapters
 
 
 def canonical_smiles(smiles: str) -> str | None:
@@ -117,20 +139,29 @@ def softmax(values: Sequence[float]) -> list[float]:
 
 
 class CurriculumSingleStepPredictor:
-    """Execute library-1270 templates available by a selected course chapter."""
+    """Execute library-1270 templates assigned to explicitly selected chapters."""
 
     def __init__(
         self,
-        chapter: int,
+        chapters: Sequence[int] | int,
         dataset_path: Path | str = DEFAULT_DATASET,
         stock_path: Path | str = DEFAULT_STOCK,
         weights: Sequence[float] = DEFAULT_WEIGHTS,
     ) -> None:
-        if chapter not in AVAILABLE_CHAPTERS:
-            raise ValueError(f"Unsupported chapter {chapter}; choose one of {AVAILABLE_CHAPTERS}")
+        requested_chapters = (chapters,) if isinstance(chapters, int) else tuple(chapters)
+        if not requested_chapters:
+            raise ValueError("at least one chapter must be selected")
+        unsupported = sorted(
+            {chapter for chapter in requested_chapters if chapter not in AVAILABLE_CHAPTERS}
+        )
+        if unsupported:
+            raise ValueError(
+                f"Unsupported chapter(s) {unsupported}; choose chapters from "
+                f"{AVAILABLE_CHAPTERS[0]} to {AVAILABLE_CHAPTERS[-1]}"
+            )
         if len(weights) != 4:
             raise ValueError("weights must contain four values: CD AS RD SS")
-        self.chapter = chapter
+        self.chapters = tuple(sorted(set(requested_chapters)))
         self.dataset_path = Path(dataset_path)
         self.stock_path = Path(stock_path)
         self.weights = tuple(float(value) for value in weights)
@@ -145,7 +176,7 @@ class CurriculumSingleStepPredictor:
         self.template_records = [
             record
             for record in self.dataset["templates"]
-            if int(record["intro_chapter"]) <= chapter
+            if int(record["intro_chapter"]) in self.chapters
         ]
         self.inventory = load_inventory(self.stock_path)
         self.compiled_templates: list[tuple[dict[str, Any], Any]] = []
@@ -261,9 +292,9 @@ class CurriculumSingleStepPredictor:
         return {
             "product_input": product,
             "product_canonical": product_canonical,
-            "requested_chapter": self.chapter,
+            "requested_chapters": list(self.chapters),
             "snapshot_definition": (
-                "cumulative library-1270 templates introduced up to and including the requested chapter"
+                "library-1270 templates assigned only to the explicitly requested chapters"
             ),
             "library_version": "library_1270",
             "stock_file": self.stock_path.name,
@@ -271,10 +302,13 @@ class CurriculumSingleStepPredictor:
             "top_k": top_k,
             "template_inventory": {
                 "available_unique_templates": len(self.template_records),
-                "new_templates_at_requested_chapter": sum(
-                    int(record["intro_chapter"]) == self.chapter
-                    for record in self.template_records
-                ),
+                "unique_templates_by_requested_chapter": {
+                    str(chapter): sum(
+                        int(record["intro_chapter"]) == chapter
+                        for record in self.template_records
+                    )
+                    for chapter in self.chapters
+                },
                 "compiled_templates": len(self.compiled_templates),
                 "template_compile_errors": self.compile_error_count,
             },
@@ -293,7 +327,8 @@ class CurriculumSingleStepPredictor:
 def print_predictions(result: dict[str, Any]) -> None:
     print("\nSingle-step retrosynthesis (library 1270)")
     print(f"Product: {result['product_canonical']}")
-    print(f"Chapter: {result['requested_chapter']} (cumulative)")
+    chapters = ", ".join(map(str, result["requested_chapters"]))
+    print(f"Chapters: {chapters} (explicit selection)")
     print(
         f"Templates: {result['template_inventory']['available_unique_templates']}; "
         f"unique predictions: {result['execution_stats']['unique_predictions_before_top_k']}"
@@ -315,12 +350,15 @@ def print_predictions(result: dict[str, Any]) -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Library-1270 single-step retrosynthesis using cumulative course-chapter templates."
+        description=(
+            "Library-1270 single-step retrosynthesis using templates from explicitly "
+            "selected course chapters."
+        )
     )
     parser.add_argument("-p", "--product", help="Product SMILES. Prompted if omitted.")
     parser.add_argument(
-        "-c", "--chapter", type=int, choices=AVAILABLE_CHAPTERS,
-        help=f"Course chapter. Available: {', '.join(map(str, AVAILABLE_CHAPTERS))}.",
+        "-c", "--chapters", type=parse_chapters, metavar="CHAPTERS",
+        help="Comma-separated chapters to use, for example 1,2,3 or 5,6,7.",
     )
     parser.add_argument("-k", "--top-k", type=int, default=10)
     parser.add_argument("-o", "--output", type=Path, help="Optional JSON output path.")
@@ -337,11 +375,16 @@ def main() -> int:
     args = parse_args()
     try:
         product = args.product or input("Product SMILES: ").strip()
-        chapter = args.chapter
-        if chapter is None:
-            chapter = int(input(f"Chapter ({'/'.join(map(str, AVAILABLE_CHAPTERS))}): ").strip())
+        chapters = args.chapters
+        if chapters is None:
+            chapters = parse_chapters(
+                input(
+                    f"Chapters ({AVAILABLE_CHAPTERS[0]}-{AVAILABLE_CHAPTERS[-1]}, "
+                    "comma-separated): "
+                ).strip()
+            )
         predictor = CurriculumSingleStepPredictor(
-            chapter=chapter,
+            chapters=chapters,
             dataset_path=args.dataset,
             stock_path=args.stock,
             weights=args.weights,
@@ -354,7 +397,7 @@ def main() -> int:
             output.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
             print(f"\nJSON written to: {output}")
         return 0
-    except (ValueError, FileNotFoundError, KeyError) as exc:
+    except (argparse.ArgumentTypeError, ValueError, FileNotFoundError, KeyError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2
 
