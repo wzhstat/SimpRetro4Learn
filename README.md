@@ -96,7 +96,7 @@ python main.py \
 
 ## Preprocessing
 
-### ChemDraw `[R]` Template Workflow
+### Template Workflow
 
 All dependencies are installed once with `pip install -r requirements.txt` during installation.
 
@@ -106,7 +106,7 @@ First, add one generic forward reaction per row to `template_generator/demo_reac
 |---|---|
 | `reaction_id` | Unique reaction ID. |
 | `reaction_name` | Reaction name. |
-| `reaction` | ChemDraw reaction, e.g. `[R]C(Cl)=O>>[R]C(O)=O`. |
+| `reaction` | Reaction SMILES, e.g. `[R]C(Cl)=O>>[R]C(O)=O`. |
 | `R1` | Allowed classes for `[R]` or `[R1]`, separated by semicolons. |
 | `R2` | Allowed classes for `[R2]`; leave blank if unused. |
 | `atom_source` | Source of a newly added heavy atom, e.g. `O` for water. |
