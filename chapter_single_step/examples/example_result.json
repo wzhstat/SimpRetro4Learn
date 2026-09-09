@@ -6,7 +6,7 @@
     6,
     7
   ],
-  "snapshot_definition": "library-1270 templates assigned only to the explicitly requested chapters",
+  "snapshot_definition": "templates assigned only to the explicitly requested chapters",
   "library_version": "library_1270",
   "stock_file": "emol_under_4_carbons.txt",
   "weights": [
@@ -17,22 +17,22 @@
   ],
   "top_k": 5,
   "template_inventory": {
-    "available_unique_templates": 378,
+    "available_unique_templates": 400,
     "unique_templates_by_requested_chapter": {
-      "5": 308,
-      "6": 31,
-      "7": 39
+      "5": 320,
+      "6": 34,
+      "7": 46
     },
-    "compiled_templates": 378,
+    "compiled_templates": 400,
     "template_compile_errors": 0
   },
   "execution_stats": {
-    "matching_templates": 1,
+    "matching_templates": 2,
     "template_execution_errors": 0,
     "invalid_generated_results": 0,
-    "unique_predictions_before_top_k": 1,
-    "returned_predictions": 1,
-    "elapsed_seconds": 0.028056100010871887
+    "unique_predictions_before_top_k": 2,
+    "returned_predictions": 2,
+    "elapsed_seconds": 0.018000599997321842
   },
   "predictions": [
     {
@@ -57,6 +57,7 @@
           "instance_count": 1,
           "reaction_family": "esterification",
           "core_reaction_ids": "PDF-103 | PDF-104 | XLSX-001 | XLSX-002 | XLSX-003 | XLSX-004 | XLSX-005",
+          "source_answer_step_ids": "",
           "conditions": "H+",
           "score": 1.866666666666667,
           "score_components": {
@@ -68,10 +69,49 @@
         }
       ],
       "rank": 1,
-      "policy_probability": 1.0,
+      "policy_probability": 0.8660721116759263,
       "template_support_count": 1,
       "reaction_families": [
         "esterification"
+      ]
+    },
+    {
+      "reactants": [
+        "C=CC(=O)OCC"
+      ],
+      "reactants_smiles": "C=CC(=O)OCC",
+      "best_score": 0.0,
+      "best_score_components": {
+        "complexity_disconnection": 0.0,
+        "starting_material_availability": 0.0,
+        "ring_disconnection": 0.0,
+        "template_specificity": 1.0
+      },
+      "first_available_chapter": 5,
+      "evidence": [
+        {
+          "template_hash": "f289839bed3d70c83c80f07d0de2bd80cf1a9af469fe199c37effbd65ca06ece",
+          "template_smarts": "[C:1]-[CH2;D2;+0:2]-[CH3;D1;+0:3]>>[C:1]-[CH;D2;+0:2]=[CH2;D1;+0:3]",
+          "intro_chapter": 5,
+          "instance_count": 1,
+          "reaction_family": "alkene_hydrogenation",
+          "core_reaction_ids": "",
+          "source_answer_step_ids": "COURSE-18_3",
+          "conditions": "H2,Ni",
+          "score": 0.0,
+          "score_components": {
+            "complexity_disconnection": 0.0,
+            "starting_material_availability": 0.0,
+            "ring_disconnection": 0.0,
+            "template_specificity": 1.0
+          }
+        }
+      ],
+      "rank": 2,
+      "policy_probability": 0.13392788832407362,
+      "template_support_count": 1,
+      "reaction_families": [
+        "alkene_hydrogenation"
       ]
     }
   ]

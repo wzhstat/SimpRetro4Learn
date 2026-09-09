@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "library_version": "library_1270",
-  "template_instances": 1272,
-  "unique_templates": 927,
+  "template_instances": 1377,
+  "unique_templates": 1005,
   "chapter_rule": "earliest appearance",
   "available_chapters": [
     2,
@@ -18,32 +18,32 @@
     13
   ],
   "new_unique_templates_by_chapter": {
-    "2": 22,
-    "4": 165,
-    "5": 308,
-    "6": 31,
-    "7": 39,
-    "8": 126,
-    "9": 178,
-    "10": 42,
-    "11": 16,
+    "2": 25,
+    "4": 179,
+    "5": 320,
+    "6": 34,
+    "7": 46,
+    "8": 127,
+    "9": 209,
+    "10": 45,
+    "11": 20,
     "12": 0,
     "13": 0
   },
   "cumulative_unique_templates_by_chapter": {
-    "2": 22,
-    "4": 187,
-    "5": 495,
-    "6": 526,
-    "7": 565,
-    "8": 691,
-    "9": 869,
-    "10": 911,
-    "11": 927,
-    "12": 927,
-    "13": 927
+    "2": 25,
+    "4": 204,
+    "5": 524,
+    "6": 558,
+    "7": 604,
+    "8": 731,
+    "9": 940,
+    "10": 985,
+    "11": 1005,
+    "12": 1005,
+    "13": 1005
   },
-  "source_description": "Compact, non-duplicated export of library-1270 templates with chapter assignments.",
+  "source_description": "Chapter-assigned template library including replay-validated additions derived from annotated course-exercise routes.",
   "templates": [
     {
       "template_hash": "00c65bf29341ef7513ea7235124bfc366f96269d1f54cdc96e74643247956a0b",
@@ -107,6 +107,16 @@
       "reaction_family": "elimination_alcohol",
       "conditions": "H2SO5",
       "core_reaction_ids": "PDF-110 | PDF-111 | XLSX-010 | PDF-100 | PDF-101 | PDF-102 | PDF-103 | PDF-104 | PDF-105 | PDF-106 | PDF-107 | PDF-108 | PDF-109 | PDF-112 | PDF-113 | PDF-114 | PDF-115 | PDF-116 | PDF-117 | PDF-118 | PDF-121 | PDF-124 | XLSX-001 | XLSX-002 | XLSX-003 | XLSX-004 | XLSX-005 | XLSX-006 | XLSX-008 | XLSX-009"
+    },
+    {
+      "template_hash": "031802a4aa72c139bd8a49007423433a6f8cee49456b1dd13d1038459903a502",
+      "template": "[C:3]#[C;H0;D2;+0:4]-[CH2;D2;+0:1]-[C:2]>>Br-[CH2;D2;+0:1]-[C:2].[C:3]#[CH;D1;+0:4]",
+      "intro_chapter": 5,
+      "instance_count": 2,
+      "reaction_family": "alkyne_alkylation",
+      "conditions": "NaNH2",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-20_5 | COURSE-27_6"
     },
     {
       "template_hash": "046ab7eda9a1e4e8e007dff94125c5a60e8bdb1e18fecbea0bd8e7971a92f8ae",
@@ -190,6 +200,16 @@
       "core_reaction_ids": "PDF-018 | PDF-019 | PDF-020 | PDF-021 | PDF-025 | PDF-026 | PDF-027"
     },
     {
+      "template_hash": "064873841bee1ec68520fdb95b3d36302b823d2b001b79241e70110938a78de6",
+      "template": "[#7;a:3]:[c:4]-[C;H0;D3;+0:5](=[O;H0;D1;+0:2])-[OH;D1;+0:1]>>O=[Mn](-[O-])(=[O;H0;D1;+0:1])=[O;H0;D1;+0:2].[#7;a:3]:[c:4]-[CH3;D1;+0:5]",
+      "intro_chapter": 11,
+      "instance_count": 1,
+      "reaction_family": "heterocycle",
+      "conditions": "KMnO4",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-2_2"
+    },
+    {
       "template_hash": "065a649021c33f92afca9a6f6994af9801f4e9e63f4eb94d2a3a2962958eed97",
       "template": "[C;D1;H3:7]-[C;H0;D4;+0:8]1(-[C;D1;H3:9])-[CH2;D2;+0:6]-[C;H0;D3;+0:13](-[CH3;D1;+0:11])=[CH;D2;+0:12]-[C;H0;D4;+0:2](-[C;D1;H3:1])(-[C;D1;H3:3])-[C;H0;D4;+0:10]-1(-[CH3;D1;+0:5])-[CH3;D1;+0:4]>>[C;D1;H3:1]-[C;H0;D3;+0:2](-[C;D1;H3:3])=[C;H0;D3;+0:4](-[CH3;D1;+0:5])-[CH3;D1;+0:6].[C;D1;H3:7]-[C;H0;D3;+0:8](-[C;D1;H3:9])=[C;H0;D3;+0:10](-[CH3;D1;+0:11])-[CH;D2;+0:12]=[CH2;D1;+0:13]",
       "intro_chapter": 5,
@@ -251,6 +271,16 @@
       "reaction_family": "amine_alkylation",
       "conditions": "",
       "core_reaction_ids": "XLSX-118 | XLSX-119 | XLSX-120 | XLSX-121"
+    },
+    {
+      "template_hash": "07bdf5af53b009605b25c6a2018e9607d45f12eb8f894d74f9e60674a4ea679f",
+      "template": "[C:1]-[CH;D2;+0:2]=[CH;D2;+0:3]-[C;D1;H3:4]>>[C:1]-[C;H0;D2;+0:2]#[C;H0;D2;+0:3]-[C;D1;H3:4]",
+      "intro_chapter": 5,
+      "instance_count": 1,
+      "reaction_family": "alkyne_reduction",
+      "conditions": "Li,NH3",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-27_7"
     },
     {
       "template_hash": "080ccb0f4dc2329fe9b209c97ad97cf6ee1291e209a19a651aa2737e92daa139",
@@ -343,6 +373,16 @@
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
     },
     {
+      "template_hash": "0a3979378e38afcfbb24f5c4d990d212ea1cd7c6ac3fc602bfc4bfac48ba7966",
+      "template": "[C:2]-[CH2;D2;+0:1]-[OH;D1;+0:3]>>O-[C;H0;D3;+0:1](-[C:2])=[O;H0;D1;+0:3]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "carboxylic_acid_reduction",
+      "conditions": "LiAlH4",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-12_3_1"
+    },
+    {
       "template_hash": "0a6261ebc44d7df02c6d14658e99bbb9999c9a599f3e840ddddd4bedb4b32500",
       "template": "[C;D1;H3:2]-[CH;D2;+0:1]=[O;H0;D1;+0:3]>>C-C(-O)-[CH;D3;+0:1](-[C;D1;H3:2])-[OH;D1;+0:3]",
       "intro_chapter": 7,
@@ -359,6 +399,26 @@
       "reaction_family": "halide_substitution",
       "conditions": "",
       "core_reaction_ids": "PDF-007"
+    },
+    {
+      "template_hash": "0b607641050a2d624585e8631835d9daf24569fc060fd907fa3bcf7f0d735238",
+      "template": "[C;D1;H3:3]-[C;H0;D2;+0:2]#[CH;D1;+0:1]>>Br-[CH2;D2;+0:1]-[CH;D3;+0:2](-Br)-[C;D1;H3:3]",
+      "intro_chapter": 5,
+      "instance_count": 1,
+      "reaction_family": "alkyne_formation",
+      "conditions": "Base",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-27_4"
+    },
+    {
+      "template_hash": "0bfafe27896e2dd88e301327bc42d65754772dcbe2b0fed668347843186300a1",
+      "template": "[O;D1;H0:5]=[C:4]-[CH2;D2;+0:3]-[CH2;D2;+0:1]-[OH;D1;+0:2]>>[CH2;D1;+0:1]=[O;H0;D1;+0:2].[CH3;D1;+0:3]-[C:4]=[O;D1;H0:5]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "aldol_condensation",
+      "conditions": "H+",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-6_2"
     },
     {
       "template_hash": "0c3f6f301ae48a36e4d52027f72fec1dc39e334535b99dbb8bbfbe0cb00a204e",
@@ -559,6 +619,16 @@
       "core_reaction_ids": "XLSX-022 | XLSX-023 | XLSX-024 | XLSX-025 | XLSX-026 | XLSX-027 | XLSX-028 | XLSX-017 | XLSX-018 | XLSX-019 | XLSX-020 | XLSX-021"
     },
     {
+      "template_hash": "1310462f286a84f03a5c1492c30801fdeeb82156512f8489010b8fe6dae85bfd",
+      "template": "[#8:5]-[C:4](=[O;D1;H0:6])-[CH;D3;+0:1](-[C:2])-[C:3]>>C-C(=O)-[C;H0;D4;+0:1](-[C:2])(-[C:3])-[C:4](-[#8:5])=[O;D1;H0:6]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "carboxyl_derivative_hydrolysis",
+      "conditions": "H2O,NaOH",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-16_3_2"
+    },
+    {
       "template_hash": "1378663fbb0b38bda9aa975e0cc230b985bd9d63b76865c541b2c8b1eb990599",
       "template": "[C;D1;H3:6]-[CH;D3;+0:7]1-[CH2;D2;+0:3]-[C;H0;D3;+0:13](-[CH3;D1;+0:5])=[C;H0;D3;+0:11](-[C;D1;H3:12])-[C;H0;D4;+0:2](-[C;D1;H3:1])(-[CH3;D1;+0:4])-[C;H0;D4;+0:8]-1(-[C;D1;H3:9])-[C;D1;H3:10]>>[C;D1;H3:1]-[C;H0;D3;+0:2](-[CH3;D1;+0:3])=[CH;D2;+0:4]-[CH3;D1;+0:5].[C;D1;H3:6]-[C;H0;D3;+0:7](=[C;H0;D3;+0:8](-[C;D1;H3:9])-[C;D1;H3:10])-[C;H0;D3;+0:11](-[C;D1;H3:12])=[CH2;D1;+0:13]",
       "intro_chapter": 5,
@@ -593,6 +663,16 @@
       "reaction_family": "carbonyl_nitrogen_addition",
       "conditions": "",
       "core_reaction_ids": "XLSX-035 | XLSX-036 | XLSX-037 | XLSX-038 | XLSX-039 | XLSX-065"
+    },
+    {
+      "template_hash": "1439d042e988f328d7f88852f79e8da2d08a714aa86dd756ad7e122d6af3d274",
+      "template": "[C;D1;H3:2]-[C;H0;D3;+0:1](=[O;D1;H0:3])-[c;H0;D3;+0:5](:[c:4]):[c:6]>>Cl-[C;H0;D3;+0:1](-[C;D1;H3:2])=[O;D1;H0:3].[c:4]:[cH;D2;+0:5]:[c:6]",
+      "intro_chapter": 6,
+      "instance_count": 1,
+      "reaction_family": "friedel_crafts_acylation",
+      "conditions": "AlCl3",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-23_1_1"
     },
     {
       "template_hash": "143a4960535ac9056847afab29ebcb42c8c4698a493da870df697496b554d8a1",
@@ -757,6 +837,16 @@
       "core_reaction_ids": "PDF-007"
     },
     {
+      "template_hash": "194e3e71c9d8bd23b5fc3a19397b51d63592a9d9d98cb224ec831cc4e7911092",
+      "template": "[C:2]-[CH2;D2;+0:1]-[CH2;D2;+0:4]-[C:3]-[OH;D1;+0:5]>>Br-[Mg]-[CH2;D2;+0:1]-[C:2].[C:3]1-[CH2;D2;+0:4]-[O;H0;D2;+0:5]-1",
+      "intro_chapter": 8,
+      "instance_count": 1,
+      "reaction_family": "epoxide_opening",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-28_6"
+    },
+    {
       "template_hash": "19722cac1e0a20df90908a472c07703feb9806b9251e2518d66862a51adae9b7",
       "template": "[C;D1;H3:1]-[C;H0;D4;+0:2]1(-[CH3;D1;+0:3])-[CH2;D2;+0:4]-[CH;D3;+0:10](-[C;D1;H3:11])-[C;H0;D3;+0:8](-[C;D1;H3:9])=[CH;D2;+0:7]-[CH;D3;+0:6]-1-[C;D1;H3:5]>>[C;D1;H3:1]-[C;H0;D3;+0:2](=[CH2;D1;+0:3])-[CH3;D1;+0:4].[C;D1;H3:5]-[CH;D2;+0:6]=[CH;D2;+0:7]-[C;H0;D3;+0:8](-[C;D1;H3:9])=[CH;D2;+0:10]-[C;D1;H3:11]",
       "intro_chapter": 5,
@@ -836,6 +926,16 @@
       "reaction_family": "elimination_halide",
       "conditions": "NaOEt",
       "core_reaction_ids": "PDF-010 | PDF-011 | PDF-035 | PDF-036"
+    },
+    {
+      "template_hash": "1c06182b68eb4235adf685f8e2bdfcfda7c6f43b1b34a09ace23cb688cf30e95",
+      "template": "[C:3]-[C;H0;D2;+0:2]#[CH;D1;+0:1]>>Br-[CH2;D2;+0:1]-[CH;D3;+0:2](-Br)-[C:3]",
+      "intro_chapter": 5,
+      "instance_count": 1,
+      "reaction_family": "alkyne_formation",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-20_4"
     },
     {
       "template_hash": "1cfb59826b5beca2fb97f18159bb4bbc9a30c9a334fd2063e099d82ef0e406c5",
@@ -1045,6 +1145,16 @@
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
     },
     {
+      "template_hash": "2342f16cf9bfa58f1e575ca0e4a42a44b5361c3ca9506b38ffe28b1115bcff20",
+      "template": "[Br;H0;D1;+0:1]-[C;H0;D4;+0:3](-[C;D1;H3:2])(-[C;D1;H3:4])-[C;D1;H3:5]>>Br-[Br;H0;D1;+0:1].[C;D1;H3:2]-[CH;D3;+0:3](-[C;D1;H3:4])-[C;D1;H3:5]",
+      "intro_chapter": 2,
+      "instance_count": 1,
+      "reaction_family": "alkane_halogenation",
+      "conditions": "hv",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-31_1"
+    },
+    {
       "template_hash": "2356c962e280b469bd10ebda6028b0c5401341def47e59373aa31b8ddfbebe5e",
       "template": "[C;D1;H3:5]-[CH;D3;+0:6](-[C:7]-[OH;D1;+0:8])-[C;H0;D4;+0:1](-[C;D1;H3:2])(-[C;D1;H3:3])-[C;D1;H3:4]>>Br-[Mg]-[C;H0;D4;+0:1](-[C;D1;H3:2])(-[C;D1;H3:3])-[C;D1;H3:4].[C;D1;H3:5]-[CH;D3;+0:6]1-[C:7]-[O;H0;D2;+0:8]-1",
       "intro_chapter": 8,
@@ -1070,6 +1180,16 @@
       "reaction_family": "diazonium_substitution",
       "conditions": "",
       "core_reaction_ids": "XLSX-140"
+    },
+    {
+      "template_hash": "23d36427fcf738f50cfe1bdf2cffa162697c3f7eefe39105bde2349b0a08bfe1",
+      "template": "[C;D1;H3:2]-[CH;D3;+0:1](-[C;D1;H3:3])-[OH;D1;+0:4]>>Br-[CH;D3;+0:1](-[C;D1;H3:2])-[C;D1;H3:3].[OH2;D0;+0:4]",
+      "intro_chapter": 4,
+      "instance_count": 1,
+      "reaction_family": "halide_substitution",
+      "conditions": "H2O,NaOH",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-30_2"
     },
     {
       "template_hash": "23f222d84d204e0a277ca8e0b99fb3a5312018710431c1de8ea6bfd0a5e562f8",
@@ -1117,6 +1237,16 @@
       "core_reaction_ids": "PDF-001 | PDF-002"
     },
     {
+      "template_hash": "25138af05f836e95ffd1d32b10232145978b124b571abe0bd2eb04c41ace8ccb",
+      "template": "[O;D1;H0:2]=[C:3]-[C:4]-[C;H0;D3;+0:5](-[O;D1;H1:6])=[O;H0;D1;+0:1]>>O=[Mn](=O)(-[O-])=[O;H0;D1;+0:1].[O;D1;H0:2]=[C:3]-[C:4]-[CH2;D2;+0:5]-[O;D1;H1:6]",
+      "intro_chapter": 7,
+      "instance_count": 2,
+      "reaction_family": "alcohol_oxidation",
+      "conditions": "KMnO4",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-6_3 | COURSE-6_4"
+    },
+    {
       "template_hash": "251a07c1146795af6f29062a92cb38c5d762b8e1a01157fc5168ebc14b73c9b1",
       "template": "[Br;H0;D1;+0:1]-[CH2;D2;+0:4]-[CH;D3;+0:3](-[C;D1;H3:2])-[O;H0;D2;+0:6]-[C;D1;H3:5]>>Br-[Br;H0;D1;+0:1].[C;D1;H3:2]-[CH;D2;+0:3]=[CH2;D1;+0:4].[C;D1;H3:5]-[OH;D1;+0:6]",
       "intro_chapter": 5,
@@ -1124,6 +1254,16 @@
       "reaction_family": "alkene_halogen_addition",
       "conditions": "",
       "core_reaction_ids": "PDF-037"
+    },
+    {
+      "template_hash": "25351a49f26680f440a59cc69847a3fba719cb490f97b0a5bfee2eabc8a4a36b",
+      "template": "[C;D1;H3:2]-[CH2;D2;+0:1]-[NH2;D1;+0:3]>>Br-[CH2;D2;+0:1]-[C;D1;H3:2].[NH3;D0;+0:3]",
+      "intro_chapter": 10,
+      "instance_count": 1,
+      "reaction_family": "amine_alkylation",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-4_3_2"
     },
     {
       "template_hash": "257b54546ed050cd8323543b5633c47ca994da3acbd78a7d59d95248e8430188",
@@ -1259,6 +1399,16 @@
       "reaction_family": "carbonyl_deoxygenation",
       "conditions": "Zn-Hg, HCl",
       "core_reaction_ids": "XLSX-046 | XLSX-047 | XLSX-048"
+    },
+    {
+      "template_hash": "2967d4b515470c5d34184ffeb0928c1f70f946f860ffca737b02de0fd02c5dd1",
+      "template": "[C;D1;H3:2]-[CH;D3;+0:3]1-[CH2;D2;+0:4]-[O;H0;D2;+0:1]-1>>O=C-O-[OH;D1;+0:1].[C;D1;H3:2]-[CH;D2;+0:3]=[CH2;D1;+0:4]",
+      "intro_chapter": 5,
+      "instance_count": 1,
+      "reaction_family": "alkene_epoxidation",
+      "conditions": "RCOOOH",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-28_5"
     },
     {
       "template_hash": "29f025c9e012dc2069221c5b634f8a07e84f468a3ec9b51b5dce8ba50d142118",
@@ -1414,6 +1564,26 @@
       "core_reaction_ids": "PDF-012 | PDF-013 | PDF-022 | PDF-025 | PDF-028"
     },
     {
+      "template_hash": "2e93d3aa01cea06320d5d0dc515b95b0915633c55f3806dce8687691ed5f9c4a",
+      "template": "[C;D1;H3:4]-[C:5](=[O;D1;H0:7])-[CH;D2;+0:6]=[C;H0;D3;+0:1](-[C;D1;H3:2])-[C;D1;H3:3]>>O=[C;H0;D3;+0:1](-[C;D1;H3:2])-[C;D1;H3:3].[C;D1;H3:4]-[C:5](-[CH3;D1;+0:6])=[O;D1;H0:7]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "aldol_condensation",
+      "conditions": "H+",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-13_1"
+    },
+    {
+      "template_hash": "2eaf08fef239ddc9107cd35a15779c619973d31fee2488fb479fdb1f49761949",
+      "template": "[Br;H0;D1;+0:1]-[CH;D3;+0:3](-[C;D1;H3:2])-[C;D1;H3:4]>>Br-[Br;H0;D1;+0:1].[C;D1;H3:2]-[CH2;D2;+0:3]-[C;D1;H3:4]",
+      "intro_chapter": 2,
+      "instance_count": 4,
+      "reaction_family": "alkane_halogenation",
+      "conditions": "hv",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-26_1 | COURSE-27_1 | COURSE-28_1 | COURSE-30_1"
+    },
+    {
       "template_hash": "2eb030a38300ccfc5f204de4ff5e8a2457d9e437854d3878f615ff4422932d40",
       "template": "[C;D1;H2:1]=[C:2]-[CH;D3;+0:3](-[CH3;D1;+0:5])-[OH;D1;+0:4]>>[C;D1;H2:1]=[C:2]-[CH;D2;+0:3]=[O;H0;D1;+0:4].[CH3;D1;+0:5]-[Li]",
       "intro_chapter": 4,
@@ -1468,6 +1638,16 @@
       "core_reaction_ids": "XLSX-097 | XLSX-098 | XLSX-099"
     },
     {
+      "template_hash": "30acf762b8336f437ed5408971e4de8ec18371bc58cf2fb71510d7dc3f04e293",
+      "template": "[C;D1;H3:2]-[C;H0;D3;+0:1](-[NH2;D1;+0:4])=[O;D1;H0:3]>>O-[C;H0;D3;+0:1](-[C;D1;H3:2])=[O;D1;H0:3].[NH3;D0;+0:4]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "amide_formation",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-4_3_1"
+    },
+    {
       "template_hash": "31059fc1f99c7d4f4217a26a96e3204814b52b7ca2fd821ca05e6f6573bb5aa5",
       "template": "[Br;H0;D1;+0:1]-[CH2;D2;+0:2]-[C:3](=[O;D1;H0:4])-[O;D1;H1:5]>>Br-[Br;H0;D1;+0:1].[CH3;D1;+0:2]-[C:3](=[O;D1;H0:4])-[O;D1;H1:5]",
       "intro_chapter": 9,
@@ -1502,6 +1682,16 @@
       "reaction_family": "organometallic_formation",
       "conditions": "anhydrous diethyl ether | anhydrous diethyl ether, I2",
       "core_reaction_ids": "PDF-012 | PDF-013 | PDF-022 | PDF-025 | PDF-028"
+    },
+    {
+      "template_hash": "32e1c423a98eab90d392e06e85b6f3429b869dded151e14229c3e2d10a1d584c",
+      "template": "[C;D1;H3:3]-[C:4](=[O;D1;H0:5])-[CH2;D2;+0:6]-[C;H0;D4;+0:7](-[C;D1;H3:8])(-[C;D1;H3:9])-[CH2;D2;+0:1]-[C;D1;H3:2]>>Br-[Mg]-[CH2;D2;+0:1]-[C;D1;H3:2].[C;D1;H3:3]-[C:4](=[O;D1;H0:5])-[CH;D2;+0:6]=[C;H0;D3;+0:7](-[C;D1;H3:8])-[C;D1;H3:9]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "michael_addition",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-13_2"
     },
     {
       "template_hash": "32f0be0825cb743f1a6aab2d5b4a42fc0704bf9d6a67b4d85fb27026ef48665e",
@@ -1565,6 +1755,16 @@
       "reaction_family": "organometallic_coupling",
       "conditions": "",
       "core_reaction_ids": "PDF-018 | PDF-019 | PDF-020 | PDF-021 | PDF-025 | PDF-026 | PDF-027"
+    },
+    {
+      "template_hash": "343965dfb73d2a3a7e946144f354e064c0f0a3d63784ddb6ebf1a70e778cbd30",
+      "template": "[Br;H0;D1;+0:1]-[CH2;D2;+0:3]-[C;D1;H3:2]>>Br-[Br;H0;D1;+0:1].[C;D1;H3:2]-[CH3;D1;+0:3]",
+      "intro_chapter": 2,
+      "instance_count": 1,
+      "reaction_family": "alkane_halogenation",
+      "conditions": "hv",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-25_1"
     },
     {
       "template_hash": "3445f98d4f20d83351bce3974889089015b066dc741c4de594fdf5d88a332af7",
@@ -1664,6 +1864,46 @@
       "reaction_family": "alkene_hydration",
       "conditions": "",
       "core_reaction_ids": "PDF-037 | PDF-038 | PDF-039 | PDF-040 | PDF-041 | PDF-042 | PDF-043"
+    },
+    {
+      "template_hash": "3656ba60025ddecc5408cca426bb1edfdfcd49792966841ef7194f8edcd3e1a3",
+      "template": "[C:2]1=[C:3]-[C:4]-[CH;D2;+0:5]=[CH;D2;+0:1]-1>>Br-[CH;D3;+0:1]1-[C:2]=[C:3]-[C:4]-[CH2;D2;+0:5]-1",
+      "intro_chapter": 4,
+      "instance_count": 1,
+      "reaction_family": "elimination_halide",
+      "conditions": "Base",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-29_4"
+    },
+    {
+      "template_hash": "3663b0f977bef820dbd1bfa142c0c9e69f680a25fa93faa0b8fbeeb4ac68cad7",
+      "template": "[C;D1;H3:2]-[CH;D2;+0:1]=[CH2;D1;+0:3]>>Br-[CH;D3;+0:1](-[C;D1;H3:2])-[CH3;D1;+0:3]",
+      "intro_chapter": 4,
+      "instance_count": 3,
+      "reaction_family": "elimination_halide",
+      "conditions": "Base",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-26_2 | COURSE-27_2 | COURSE-28_2"
+    },
+    {
+      "template_hash": "36808f480facb825cbbf35e9746b0be97680e35696256b5dd814e1366dad1a1d",
+      "template": "[C:2]-[CH;D3;+0:3](-[CH3;D1;+0:1])-[C:4]=[O;D1;H0:5]>>I-[CH3;D1;+0:1].[C:2]-[CH2;D2;+0:3]-[C:4]=[O;D1;H0:5]",
+      "intro_chapter": 9,
+      "instance_count": 2,
+      "reaction_family": "carbonyl_alpha_alkylation",
+      "conditions": "H+ | tBuONa",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-3_4_1 | COURSE-3_5_2"
+    },
+    {
+      "template_hash": "36972cd3b5703b271c17ce6342f7477c00390f4f023c544a42f41f484a87a07b",
+      "template": "[C:3]-[CH;D3;+0:4](-[OH;D1;+0:5])-[CH2;D2;+0:1]-[C:2]>>Br-[Mg]-[CH2;D2;+0:1]-[C:2].[C:3]-[CH;D2;+0:4]=[O;H0;D1;+0:5]",
+      "intro_chapter": 4,
+      "instance_count": 2,
+      "reaction_family": "carbonyl_organometallic",
+      "conditions": "Et2O",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-21_4 | COURSE-5_4"
     },
     {
       "template_hash": "36b874b3bd1602af0c455b883ad2c7ac6971ec6aaf097d332411dba721e12771",
@@ -1909,6 +2149,16 @@
       "core_reaction_ids": "XLSX-148 | XLSX-149 | XLSX-150 | XLSX-151 | XLSX-152 | XLSX-153 | XLSX-154 | XLSX-155 | XLSX-156 | XLSX-157 | XLSX-158 | XLSX-161 | XLSX-162 | XLSX-163 | XLSX-164 | XLSX-165 | XLSX-166 | XLSX-167"
     },
     {
+      "template_hash": "3e98ab5928e0c511f0d60622d5dd67842a4322a25b9bbaea18de48e49b8d1204",
+      "template": "[#7;a:1]:[c;H0;D3;+0:2](-[CH3;D1;+0:4]):[c:3]>>[#7;a:1]:[cH;D2;+0:2]:[c:3].[CH3;D1;+0:4]-[Li]",
+      "intro_chapter": 11,
+      "instance_count": 1,
+      "reaction_family": "heterocycle",
+      "conditions": "O2",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-2_1"
+    },
+    {
       "template_hash": "3ea1234b7c62e9ce5c39ad72a108adc6bbc5f272ac218b7c154bedbd14ddd84b",
       "template": "[C;D1;H3:1]-[C;H0;D4;+0:2]1(-[CH3;D1;+0:9])-[CH2;D2;+0:3]-[CH2;D2;+0:10]-[C;H0;D4;+0:6](-[C;D1;H3:7])(-[C;D1;H3:8])-[CH;D2;+0:5]=[CH;D2;+0:4]-1>>[C;D1;H3:1]-[C;H0;D3;+0:2](-[CH3;D1;+0:3])=[CH;D2;+0:4]-[CH;D2;+0:5]=[C;H0;D3;+0:6](-[C;D1;H3:7])-[C;D1;H3:8].[CH2;D1;+0:9]=[CH2;D1;+0:10]",
       "intro_chapter": 5,
@@ -1934,6 +2184,16 @@
       "reaction_family": "diels_alder",
       "conditions": "heating",
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
+    },
+    {
+      "template_hash": "3f53db5ecf4fc5a08091a0864b6d9fef79d143411894f9c88b999556eaa28f35",
+      "template": "[C;D1;H3:3]-[C:4](=[O;D1;H0:6])-[NH;D2;+0:5]-[CH2;D2;+0:1]-[C;D1;H3:2]>>Br-[CH2;D2;+0:1]-[C;D1;H3:2].[C;D1;H3:3]-[C:4](-[NH2;D1;+0:5])=[O;D1;H0:6]",
+      "intro_chapter": 10,
+      "instance_count": 1,
+      "reaction_family": "amine_alkylation",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-4_4_1"
     },
     {
       "template_hash": "3f568b721fcae04b5da47fb52632757e6f2dc5ca21e7c00083aeac2b6e73af50",
@@ -2080,6 +2340,16 @@
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
     },
     {
+      "template_hash": "44c8af0c7936dac78e7966e666914e1324c7b0b516565f9054370d4f2d7adcd0",
+      "template": "[CH3;D1;+0:1]-[CH;D3;+0:5](-[C:3](=[O;D1;H0:2])-[O;D1;H1:4])-[C:6](=[O;D1;H0:7])-[O;D1;H1:8]>>I-[CH3;D1;+0:1].[O;D1;H0:2]=[C:3](-[O;D1;H1:4])-[CH2;D2;+0:5]-[C:6](=[O;D1;H0:7])-[O;D1;H1:8]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "carbonyl_alpha_alkylation",
+      "conditions": "Base",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-12_1_1"
+    },
+    {
       "template_hash": "4508502be8a9181187afb205e756c9ad197a5e52fd69bfe3f691b81e73c70c98",
       "template": "[Br;H0;D1;+0:1]-[CH2;D2;+0:5]-[CH2;D2;+0:4]-[O;H0;D2;+0:3]-[C;D1;H3:2]>>Br-[Br;H0;D1;+0:1].[C;D1;H3:2]-[OH;D1;+0:3].[CH2;D1;+0:4]=[CH2;D1;+0:5]",
       "intro_chapter": 5,
@@ -2105,6 +2375,26 @@
       "reaction_family": "diels_alder",
       "conditions": "heating",
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
+    },
+    {
+      "template_hash": "4588347229f8a9642f798f102f407dc4c7eb3dd762ea51f2d6c2246678165c32",
+      "template": "[C;D1;H3:2]-[C:3](=[O;D1;H0:4])-[CH;D3;+0:5](-[CH3;D1;+0:1])-[C:6](-[C;D1;H3:7])=[O;D1;H0:8]>>I-[CH3;D1;+0:1].[C;D1;H3:2]-[C:3](=[O;D1;H0:4])-[CH2;D2;+0:5]-[C:6](-[C;D1;H3:7])=[O;D1;H0:8]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "carbonyl_alpha_alkylation",
+      "conditions": "Base",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-11_2"
+    },
+    {
+      "template_hash": "45969dcb6247bdee4ceee02b10a89ff1fecdf0808f4a7c633322c89693afd653",
+      "template": "[C;D1;H3:2]-[C;H0;D4;+0:1](-[C;D1;H3:3])(-[C;D1;H3:4])-[CH2;D2;+0:5]-[C;D1;H3:6]>>Br-[C;H0;D4;+0:1](-[C;D1;H3:2])(-[C;D1;H3:3])-[C;D1;H3:4].Br-[Mg]-[CH2;D2;+0:5]-[C;D1;H3:6]",
+      "intro_chapter": 4,
+      "instance_count": 1,
+      "reaction_family": "organometallic_coupling",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-31_2"
     },
     {
       "template_hash": "45e66ec2488c0d88a8a10844cdf5321066f6771988bb068a83785bca3828524a",
@@ -2404,6 +2694,16 @@
       "core_reaction_ids": "XLSX-035 | XLSX-036 | XLSX-037 | XLSX-038 | XLSX-039 | XLSX-065"
     },
     {
+      "template_hash": "4be61eda64063f3b3f7254322247af67a15eab62fc905d717d23bc28c6ae5e40",
+      "template": "[C:2]-[C;H0;D3;+0:3](=[O;H0;D1;+0:4])-[OH;D1;+0:1]>>O=[Mn](=O)(-[O-])=[O;H0;D1;+0:1].[C:2]-[CH2;D2;+0:3]-[OH;D1;+0:4]",
+      "intro_chapter": 7,
+      "instance_count": 1,
+      "reaction_family": "alcohol_oxidation",
+      "conditions": "KMnO4",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-1_1"
+    },
+    {
       "template_hash": "4c3bcdc31a0dc9e9ace37b1e5ac76ee32e682fc9ca6dfd353ee0d4d2bc0489e2",
       "template": "[C;D1;H3:1]-[CH;D3;+0:2]1-[CH;D3;+0:5]2-[CH;D2;+0:6]=[CH;D2;+0:7]-[CH;D3;+0:8](-[O;H0;D2;+0:9]-2)-[CH;D3;+0:3]-1-[C;D1;H3:4]>>[C;D1;H3:1]-[CH;D2;+0:2]=[CH;D2;+0:3]-[C;D1;H3:4].[cH;D2;+0:5]1:[cH;D2;+0:6]:[cH;D2;+0:7]:[cH;D2;+0:8]:[o;H0;D2;+0:9]:1",
       "intro_chapter": 11,
@@ -2512,6 +2812,16 @@
       "core_reaction_ids": "XLSX-090 | XLSX-091 | XLSX-092 | XLSX-093"
     },
     {
+      "template_hash": "4ea88d648f926339613b6439ce2632125658b184bee7007402f5dc1fec2cc1cd",
+      "template": "[CH3;D1;+0:7]-[CH2;D2;+0:6]-[c;H0;D3;+0:5]1:[c:4]:[c:3]:[cH;D2;+0:8]:[cH;D2;+0:2]:[cH;D2;+0:1]:1>>[CH2;D1;+0:1]=[CH2;D1;+0:2].[c:3]1:[c:4]:[cH;D2;+0:5]:[cH;D2;+0:6]:[cH;D2;+0:7]:[cH;D2;+0:8]:1",
+      "intro_chapter": 6,
+      "instance_count": 1,
+      "reaction_family": "friedel_crafts_alkylation",
+      "conditions": "AlCl3",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-23_1_2"
+    },
+    {
       "template_hash": "4ed9d27f7dab38e036a0a908e9fe475d74ffde245ae7bc6e454f63423f4b0168",
       "template": "[C;D1;H3:9]-[CH;D3;+0:10]1-[C;H0;D4;+0:2](-[C;D1;H3:1])(-[C;D1;H3:3])-[CH;D3;+0:4](-[C;D1;H3:5])-[C:6]=[C;H0;D3;+0:7](-[C;D1;H3:8])-[C;H0;D4;+0:11]-1(-[C;D1;H3:12])-[C;D1;H3:13]>>[C;D1;H3:1]-[C;H0;D3;+0:2](-[C;D1;H3:3])=[C;H0;D3;+0:4](-[C;D1;H3:5])-[C:6]=[CH;D2;+0:7]-[C;D1;H3:8].[C;D1;H3:9]-[CH;D2;+0:10]=[C;H0;D3;+0:11](-[C;D1;H3:12])-[C;D1;H3:13]",
       "intro_chapter": 5,
@@ -2573,6 +2883,16 @@
       "reaction_family": "amine_alkylation",
       "conditions": "",
       "core_reaction_ids": "XLSX-118 | XLSX-119 | XLSX-120 | XLSX-121"
+    },
+    {
+      "template_hash": "51ba783973c35b743cb19b5ae27dd9c5f4ba1796221344c9c6bfcc74d755561a",
+      "template": "[Br;H0;D1;+0:1]-[CH2;D2;+0:2]-[C:3]>>Br-P(-Br)-[Br;H0;D1;+0:1].O-[CH2;D2;+0:2]-[C:3]",
+      "intro_chapter": 7,
+      "instance_count": 6,
+      "reaction_family": "alcohol_halogenation",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-17_1 | COURSE-18_1 | COURSE-19_1 | COURSE-20_1 | COURSE-21_2 | COURSE-5_2"
     },
     {
       "template_hash": "51c2464a79c9479e4bea1e36fd3adef2c8a1ebe6f023237b9134f38573333ec6",
@@ -2818,6 +3138,16 @@
       "core_reaction_ids": "XLSX-035 | XLSX-036 | XLSX-037 | XLSX-038 | XLSX-039 | XLSX-065"
     },
     {
+      "template_hash": "58a74a3a16436ffea9fbedb2824186bc8cde7e89eef264fea0eff99cb3f6b494",
+      "template": "[CH2;D1;+0:2]=[CH;D2;+0:1]-[c:3]>>O-[CH;D3;+0:1](-[CH3;D1;+0:2])-[c:3]",
+      "intro_chapter": 7,
+      "instance_count": 1,
+      "reaction_family": "elimination_alcohol",
+      "conditions": "H+",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-23_3_1"
+    },
+    {
       "template_hash": "58ebe5d1646084b2410847be12c1143bb71cec5b55748c8dd0c4420e6504d0a8",
       "template": "[C;D1;H3:2]-[CH;D3;+0:1](-[C;D1;H3:3])-[CH2;D2;+0:4]-[C;D1;H3:5]>>Br-[CH;D3;+0:1](-[C;D1;H3:2])-[C;D1;H3:3].Cl-[Mg]-[CH2;D2;+0:4]-[C;D1;H3:5]",
       "intro_chapter": 4,
@@ -2906,6 +3236,16 @@
       "reaction_family": "carbonyl_alpha_halogenation",
       "conditions": "",
       "core_reaction_ids": "XLSX-053 | XLSX-054 | XLSX-055 | XLSX-067"
+    },
+    {
+      "template_hash": "5bbe929f2c8c56c9f093a3d8588c359998abfe639beada18a7db421ac81cb1fd",
+      "template": "[O;D1;H0:5]=[C:4]1-[C:3]-[C;H0;D3;+0:1](=[O;D1;H0:2])-[NH;D2;+0:9]-[C;H0;D3;+0:7](=[O;D1;H0:8])-[C:6]-1>>O-[C;H0;D3;+0:1](=[O;D1;H0:2])-[C:3]-[C:4](=[O;D1;H0:5])-[C:6]-[C;H0;D3;+0:7](-O)=[O;D1;H0:8].[NH3;D0;+0:9]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "amide_formation",
+      "conditions": "PBr3",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-6_5"
     },
     {
       "template_hash": "5bcbb2242629652b49386ff2700a2045d45b617e7612af3fc83118f5166b6a17",
@@ -3079,6 +3419,16 @@
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
     },
     {
+      "template_hash": "60fef1a397b26a5d8d55d7f41214294ce69b5720c9d9c43e6d5a9eead840b59f",
+      "template": "[C;D1;H3:7]-[C:8](=[O;D1;H0:10])-[CH;D2;+0:9]=[C;H0;D3;+0:1](-[C;D1;H3:2])-[C:3]-[C:4](-[C;D1;H3:5])=[O;D1;H0:6]>>O=[C;H0;D3;+0:1](-[C;D1;H3:2])-[C:3]-[C:4](-[C;D1;H3:5])=[O;D1;H0:6].[C;D1;H3:7]-[C:8](-[CH3;D1;+0:9])=[O;D1;H0:10]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "aldol_condensation",
+      "conditions": "H+",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-11_4"
+    },
+    {
       "template_hash": "61231121eaff79ed3ecf848200c344fa5a994daa00496a090be00d8b13cdbf7a",
       "template": "[C;D1;H3:2]-[CH;D3;+0:1](-[C;D1;H3:3])-[N;H0;D3;+0:5](-[C;D1;H3:4])-[C;D1;H3:6]>>Cl-[CH;D3;+0:1](-[C;D1;H3:2])-[C;D1;H3:3].[C;D1;H3:4]-[NH;D2;+0:5]-[C;D1;H3:6]",
       "intro_chapter": 10,
@@ -3140,6 +3490,16 @@
       "reaction_family": "diels_alder",
       "conditions": "heating",
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
+    },
+    {
+      "template_hash": "6383b531db903a64a67dfbf66d1f11530ddc37416396f66c72ce15648463af93",
+      "template": "[#8:7]-[C:8](=[O;D1;H0:9])-[CH;D3;+0:10](-[C:11](-[#8:12])=[O;D1;H0:13])-[CH;D3;+0:1](-[c:2])-[C:3]-[C:4](-[C;D1;H3:5])=[O;D1;H0:6]>>Br-[CH;D3;+0:1](-[c:2])-[C:3]-[C:4](-[C;D1;H3:5])=[O;D1;H0:6].[#8:7]-[C:8](=[O;D1;H0:9])-[CH2;D2;+0:10]-[C:11](-[#8:12])=[O;D1;H0:13]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "carbonyl_alpha_alkylation",
+      "conditions": "Base",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-22_3"
     },
     {
       "template_hash": "639c8005aed84fa6609d423606486dc356d7caed10857334812af5e6a9f5b5b0",
@@ -3212,6 +3572,16 @@
       "reaction_family": "diels_alder",
       "conditions": "heating",
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
+    },
+    {
+      "template_hash": "647a6e285c3121c35d9cc3c32e705fbcec48906ca853df4392bacc1389010206",
+      "template": "[C;D1;H3:2]-[CH2;D2;+0:1]-[O;D1;H1:3]>>O=[C;H0;D3;+0:1](-[C;D1;H3:2])-[O;D1;H1:3]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "carboxylic_acid_reduction",
+      "conditions": "LiAlH4",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-10_1"
     },
     {
       "template_hash": "64f7f6d94a337ef08bd18538ad2e6d8ac9be6bac85d5ec185b5b4541f8cecaee",
@@ -3322,6 +3692,16 @@
       "core_reaction_ids": "XLSX-022 | XLSX-023 | XLSX-024 | XLSX-025 | XLSX-026 | XLSX-027 | XLSX-028 | XLSX-017 | XLSX-018 | XLSX-019 | XLSX-020 | XLSX-021"
     },
     {
+      "template_hash": "69b7925caa478198329aabf37de4383f8965101b039939f59b044643bfbb0aa4",
+      "template": "[C:3]-[N;H0;D3;+0:4](-[CH2;D2;+0:1]-[C;D1;H3:2])-[C:5](-[C;D1;H3:6])=[O;D1;H0:7]>>I-[CH2;D2;+0:1]-[C;D1;H3:2].[C:3]-[NH;D2;+0:4]-[C:5](-[C;D1;H3:6])=[O;D1;H0:7]",
+      "intro_chapter": 10,
+      "instance_count": 1,
+      "reaction_family": "amine_alkylation",
+      "conditions": "Base",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-8_3"
+    },
+    {
       "template_hash": "69effe6d0690f6a335e5013fc8e0cb545aed7b213d3ef260a2238c40f8b6209b",
       "template": "[C;D1;H3:1]-[CH;D3;+0:2]1-[C:3]=[C:4]-[C;H0;D4;+0:5](-[CH3;D1;+0:8])(-[CH3;D1;+0:10])-[CH;D3;+0:7](-[CH3;D1;+0:9])-[CH2;D2;+0:6]-1>>[C;D1;H3:1]-[C;H0;D3;+0:2](-[C:3]=[C:4]-[CH3;D1;+0:5])=[CH;D2;+0:6]-[CH3;D1;+0:7].[CH2;D1;+0:8]=[CH;D2;+0:9]-[CH3;D1;+0:10]",
       "intro_chapter": 5,
@@ -3376,6 +3756,16 @@
       "core_reaction_ids": "XLSX-100 | XLSX-101 | XLSX-102"
     },
     {
+      "template_hash": "6b5f91242b13a2aeef1213711a7b163f8233652f10bf10bbcff9dfc8ce5e8dfb",
+      "template": "[C:4]-[NH;D2;+0:5]-[C;H0;D3;+0:1](-[C;D1;H3:2])=[O;D1;H0:3]>>O-[C;H0;D3;+0:1](-[C;D1;H3:2])=[O;D1;H0:3].[C:4]-[NH2;D1;+0:5]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "amide_formation",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-4_4_2"
+    },
+    {
       "template_hash": "6b6f29bbd99f51bb051f956cbe909a728a598d8fdadbca9b157158aa7588e4ab",
       "template": "[CH3;D1;+0:1]-[OH;D1;+0:2]>>[CH2;D1;+0:1]=[O;H0;D1;+0:2]",
       "intro_chapter": 9,
@@ -3401,6 +3791,16 @@
       "reaction_family": "alkyne_reduction",
       "conditions": "Li, NH3(liquid)",
       "core_reaction_ids": "PDF-067 | PDF-068 | PDF-069 | PDF-070 | PDF-071"
+    },
+    {
+      "template_hash": "6c0b99aa5de597ad531b9aed578b8b25535ab629f0c4517b4256a9b07bcf766e",
+      "template": "[C:4]=[C:3]-[CH;D3;+0:1](-[C:2])-[CH3;D1;+0:5]>>Br-[CH;D3;+0:1](-[C:2])-[C:3]=[C:4].Br-[Mg]-[CH3;D1;+0:5]",
+      "intro_chapter": 4,
+      "instance_count": 2,
+      "reaction_family": "organometallic_coupling",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-29_6 | COURSE-29_7"
     },
     {
       "template_hash": "6c53e7656e524577c87cb02d037a54b981ca69545a454ad797955a4974b17c3f",
@@ -3527,6 +3927,16 @@
       "reaction_family": "acid_halide_formation",
       "conditions": "PCl3 or POCl3 or SOCl2",
       "core_reaction_ids": "XLSX-066"
+    },
+    {
+      "template_hash": "6e65916593208e28146a31da968d5e6a19ef80afe0fc1ae1c3533168a9ba3304",
+      "template": "[O;D1;H0:6]=[C:5]1-[C:7]-[CH2;D2;+0:1]-[#7:2]-[CH2;D2;+0:3]-[C:4]-1>>O=[C;H0;D3;+0:1]1-[#7:2]-[C;H0;D3;+0:3](=O)-[C:4]-[C:5](=[O;D1;H0:6])-[C:7]-1",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "amide_reduction",
+      "conditions": "LiAlH4",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-6_6"
     },
     {
       "template_hash": "6ec9640f81a2a267f1baa21d098d7f1dd1e0f97a506b6e4256a2ada92b37fe46",
@@ -3725,6 +4135,16 @@
       "reaction_family": "organometallic_coupling",
       "conditions": "",
       "core_reaction_ids": "PDF-018 | PDF-019 | PDF-020 | PDF-021 | PDF-025 | PDF-026 | PDF-027"
+    },
+    {
+      "template_hash": "72a44a1af7acad2340a8e0736255b0697b62b599e47f5a68c73b84408d01c7b6",
+      "template": "[C:3]-[CH;D3;+0:4](-[OH;D1;+0:1])-[CH2;D2;+0:5]-[OH;D1;+0:2]>>O=[Os](=O)(=[O;H0;D1;+0:1])=[O;H0;D1;+0:2].[C:3]-[CH;D2;+0:4]=[CH2;D1;+0:5]",
+      "intro_chapter": 5,
+      "instance_count": 1,
+      "reaction_family": "alkene_oxidation",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-17_3"
     },
     {
       "template_hash": "72e4e20c52b10238c334b9719bcdea17e818ff2ac48221731513f01c6bc1c78a",
@@ -3934,6 +4354,16 @@
       "core_reaction_ids": "PDF-018 | PDF-019 | PDF-020 | PDF-021 | PDF-025 | PDF-026 | PDF-027"
     },
     {
+      "template_hash": "795216d1fef4d43025e1b34a0dd8367d93d4bc6b1e6591d19251280e142dc20d",
+      "template": "[C;D1;H3:2]-[C;H0;D3;+0:1]1=[CH;D2;+0:7]-[C:6](=[O;D1;H0:8])-[C:5]=[C:4]-[C:3]-1>>O=[C;H0;D3;+0:1](-[C;D1;H3:2])-[C:3]-[C:4]=[C:5]-[C:6](-[CH3;D1;+0:7])=[O;D1;H0:8]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "aldol_condensation",
+      "conditions": "H+",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-11_5"
+    },
+    {
       "template_hash": "795c0f8a72653b7ed2caa2e8826bd3eec52ca53ddf99dd6fd47d3f6d58755810",
       "template": "[C;D1;H3:2]-[CH2;D2;+0:1]-[CH;D3;+0:4](-[C;D1;H3:3])-[C:5]-[OH;D1;+0:6]>>Br-[Mg]-[CH2;D2;+0:1]-[C;D1;H3:2].[C;D1;H3:3]-[CH;D3;+0:4]1-[C:5]-[O;H0;D2;+0:6]-1",
       "intro_chapter": 8,
@@ -3941,6 +4371,16 @@
       "reaction_family": "epoxide_opening",
       "conditions": "Base",
       "core_reaction_ids": "XLSX-022 | XLSX-023 | XLSX-024 | XLSX-025 | XLSX-026 | XLSX-027 | XLSX-028 | XLSX-017 | XLSX-018 | XLSX-019 | XLSX-020 | XLSX-021"
+    },
+    {
+      "template_hash": "79b3523d2d794e711816baf659fad10b04e71005f63dc3a0112969da7eea3edb",
+      "template": "[#7;a:4]:[c:3]-[C;H0;D3;+0:1](=[O;H0;D1;+0:2])-[O;H0;D2;+0:6]-[C;D1;H3:5]>>O=[C;H0;D3;+0:1](-[OH;D1;+0:2])-[c:3]:[#7;a:4].[C;D1;H3:5]-[OH;D1;+0:6]",
+      "intro_chapter": 7,
+      "instance_count": 1,
+      "reaction_family": "esterification",
+      "conditions": "H2SO4",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-2_3"
     },
     {
       "template_hash": "7a4a836aca9fb25d125e0c7b8011cae56f74dc20ab3cd8153480958b01968285",
@@ -4195,6 +4635,16 @@
       "core_reaction_ids": "XLSX-105"
     },
     {
+      "template_hash": "7f7c0d6058ea4f8a7c52cfa8f464c68346142cde8fdaf5ca58bfa374403e3b0b",
+      "template": "[C:2]-[CH2;D2;+0:1]-[C;H0;D3;+0:4](=[O;D1;H0:3])-[OH;D1;+0:5]>>Br-[Mg]-[CH2;D2;+0:1]-[C:2].[O;D1;H0:3]=[C;H0;D2;+0:4]=[O;H0;D1;+0:5]",
+      "intro_chapter": 4,
+      "instance_count": 1,
+      "reaction_family": "organometallic_carboxylation",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-32_2"
+    },
+    {
       "template_hash": "80455cf1e9837c95edd9a61e879cf4f2f435e9a80c30ef15417f76f92ed72270",
       "template": "[C;D1;H3:8]-[CH;D3;+0:9]1-[CH2;D2;+0:7]-[CH2;D2;+0:6]-[C;H0;D3;+0:4](-[C;D1;H3:5])=[C;H0;D3;+0:2](-[C;D1;H3:1])-[CH;D3;+0:3]-1-[CH3;D1;+0:10]>>[C;D1;H3:1]-[C;H0;D3;+0:2](=[CH2;D1;+0:3])-[C;H0;D3;+0:4](-[C;D1;H3:5])=[CH;D2;+0:6]-[CH3;D1;+0:7].[C;D1;H3:8]-[CH;D2;+0:9]=[CH2;D1;+0:10]",
       "intro_chapter": 5,
@@ -4265,6 +4715,16 @@
       "reaction_family": "ether_synthesis",
       "conditions": "Base",
       "core_reaction_ids": "XLSX-016 | XLSX-006"
+    },
+    {
+      "template_hash": "82347cb41dcb5e8c109afce2e9b65e37a4dcbd7022ec60bfc8f9974788445df1",
+      "template": "[#7;a:4]:[c;H0;D3;+0:5](:[c:6])-[C;H0;D3;+0:1](-[C;D1;H3:2])=[O;D1;H0:3]>>Br-[C;H0;D3;+0:1](-[C;D1;H3:2])=[O;D1;H0:3].[#7;a:4]:[cH;D2;+0:5]:[c:6]",
+      "intro_chapter": 11,
+      "instance_count": 1,
+      "reaction_family": "heterocycle",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-7_1"
     },
     {
       "template_hash": "8249a14be8b5dbdbc87f67256d78f2a1abba82cd79eda4fc823e1c56709a18ef",
@@ -4429,6 +4889,16 @@
       "core_reaction_ids": "XLSX-022 | XLSX-023 | XLSX-024 | XLSX-025 | XLSX-026 | XLSX-027 | XLSX-028 | XLSX-017 | XLSX-018 | XLSX-019 | XLSX-020 | XLSX-021"
     },
     {
+      "template_hash": "85f457d4ebd5e90d7e3fdc40717ba5b5c2a79d8627499cfd9f4723a2e89a8661",
+      "template": "[CH2;D1;+0:2]=[CH;D2;+0:1]-[c:3]>>Br-[CH;D3;+0:1](-[CH3;D1;+0:2])-[c:3]",
+      "intro_chapter": 4,
+      "instance_count": 1,
+      "reaction_family": "elimination_halide",
+      "conditions": "Base",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-23_3_2"
+    },
+    {
       "template_hash": "860780aee52ea8b04ffeed14ee9bfc9492423f25603d19c89daf0b8ff372edef",
       "template": "[CH3;D1;+0:4]-[O;H0;D2;+0:3]-[CH;D2;+0:1]=[O;D1;H0:2]>>C-[C;H0;D3;+0:1](=[O;D1;H0:2])-[OH;D1;+0:3].I-[CH3;D1;+0:4]",
       "intro_chapter": 9,
@@ -4472,6 +4942,16 @@
       "reaction_family": "epoxide_opening",
       "conditions": "H+",
       "core_reaction_ids": "XLSX-022 | XLSX-023 | XLSX-024 | XLSX-025 | XLSX-026 | XLSX-027 | XLSX-028 | XLSX-017 | XLSX-018 | XLSX-019 | XLSX-020 | XLSX-021"
+    },
+    {
+      "template_hash": "87c60dea57e771920e3a6af0bbb367a573ed2719a95d208186913e47c694b320",
+      "template": "[C:2]-[CH;D3;+0:1](-[C:3])-[OH;D1;+0:4]>>Br-[CH;D3;+0:1](-[C:2])-[C:3].[OH2;D0;+0:4]",
+      "intro_chapter": 4,
+      "instance_count": 1,
+      "reaction_family": "halide_substitution",
+      "conditions": "NaOH",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-3_2"
     },
     {
       "template_hash": "87d32e0bf8c1e31032560397ff4d0bf39de794ce7434478ce2c1fb911be13923",
@@ -4625,6 +5105,16 @@
       "reaction_family": "carbonyl_alpha_halogenation",
       "conditions": "",
       "core_reaction_ids": "XLSX-053 | XLSX-054 | XLSX-055 | XLSX-067"
+    },
+    {
+      "template_hash": "8dc0c3febede8266d16bff7040f2b893172d206c28cb4dff3987c367195a5b2d",
+      "template": "[C:3]-[CH;D3;+0:4](-[C:5]=[O;D1;H0:6])-[CH2;D2;+0:1]-[C;D1;H3:2]>>I-[CH2;D2;+0:1]-[C;D1;H3:2].[C:3]-[CH2;D2;+0:4]-[C:5]=[O;D1;H0:6]",
+      "intro_chapter": 9,
+      "instance_count": 3,
+      "reaction_family": "carbonyl_alpha_alkylation",
+      "conditions": "Base | H+ | tBuONa",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-3_4_2 | COURSE-3_5_1 | COURSE-9_2"
     },
     {
       "template_hash": "8dd7b463a92b71c12fa3eb47d4e5b772cf2758e8a1a2d98e30adc720eb2e836f",
@@ -4798,6 +5288,16 @@
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
     },
     {
+      "template_hash": "92963286d9fac243585315f80c078e362394dc067ca85a1329a16c013f9884f1",
+      "template": "[#8:3]-[C:4](=[O;D1;H0:5])-[C;H0;D4;+0:6](-[C:7])(-[CH2;D2;+0:1]-[C;D1;H3:2])-[C:8](-[C;D1;H3:9])=[O;D1;H0:10]>>I-[CH2;D2;+0:1]-[C;D1;H3:2].[#8:3]-[C:4](=[O;D1;H0:5])-[CH;D3;+0:6](-[C:7])-[C:8](-[C;D1;H3:9])=[O;D1;H0:10]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "carbonyl_alpha_alkylation",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-16_2_2"
+    },
+    {
       "template_hash": "931b23b7a256e8617874767a8819ee472252ecc351ce02c2afff9b4de37dd5b6",
       "template": "[C;D1;H3:1]-[C;H0;D4;+0:2]1(-[CH3;D1;+0:12])-[CH2;D2;+0:4]-[CH;D3;+0:6](-[C;D1;H3:5])-[C;H0;D3;+0:7](-[C;D1;H3:8])=[C;H0;D3;+0:9](-[C;D1;H3:10])-[CH;D3;+0:3]-1-[CH3;D1;+0:11]>>[C;D1;H3:1]-[C;H0;D3;+0:2](=[CH2;D1;+0:3])-[CH3;D1;+0:4].[C;D1;H3:5]-[CH;D2;+0:6]=[C;H0;D3;+0:7](-[C;D1;H3:8])-[C;H0;D3;+0:9](-[C;D1;H3:10])=[CH;D2;+0:11]-[CH3;D1;+0:12]",
       "intro_chapter": 5,
@@ -4897,6 +5397,16 @@
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
     },
     {
+      "template_hash": "96ea69a7ed54ea229ba22a8f8a7f7434fb73da73e739c1420955b638f1babf82",
+      "template": "[Br;H0;D1;+0:1]-[CH;D3;+0:4]1-[C:3]-[CH;D3;+0:7](-[Br;H0;D1;+0:2])-[CH;D2;+0:6]=[CH;D2;+0:5]-1>>[Br;H0;D1;+0:1]-[Br;H0;D1;+0:2].[C:3]1-[CH;D2;+0:4]=[CH;D2;+0:5]-[CH;D2;+0:6]=[CH;D2;+0:7]-1",
+      "intro_chapter": 5,
+      "instance_count": 1,
+      "reaction_family": "alkene_halogen_addition",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-29_5"
+    },
+    {
       "template_hash": "972448fab5bc78437383d75e83050f122525ac5c3b4817bd323e71bcbb608f89",
       "template": "[C;D1;H3:1]-[C;H0;D2;+0:2]#[C;H0;D2;+0:3]-[CH3;D1;+0:4]>>[C;D1;H3:1]-[CH2;D2;+0:2]-[C;H0;D2;+0:3]#[CH;D1;+0:4]",
       "intro_chapter": 5,
@@ -4976,6 +5486,16 @@
       "reaction_family": "ether_synthesis",
       "conditions": "Base",
       "core_reaction_ids": "XLSX-016 | XLSX-006"
+    },
+    {
+      "template_hash": "993357b9ff479da227a5618bfc39ad97afb3ff289f49cea526f3902b419d8e67",
+      "template": "[C:3]-[CH;D3;+0:4](-[OH;D1;+0:5])-[C;H0;D2;+0:1]#[N;D1;H0:2]>>[C-;H0;D1:1]#[N;D1;H0:2].[C:3]-[CH;D2;+0:4]=[O;H0;D1;+0:5]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "carbonyl_carbon_nucleophile",
+      "conditions": "NaCN",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-15_1"
     },
     {
       "template_hash": "99adf61115637e0ad8e9854bb5230594c590ac744b58a13301ef818351184d8d",
@@ -5095,6 +5615,16 @@
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
     },
     {
+      "template_hash": "9b823cbecca8186ef55f6f01846408a916bbb2839dc9699836f69bad77339d44",
+      "template": "[Br;H0;D1;+0:1]-[CH;D3;+0:6](-[c:7])-[CH2;D2;+0:5]-[C:3](-[C;D1;H3:2])=[O;D1;H0:4]>>[BrH;D0;+0:1].[C;D1;H3:2]-[C:3](=[O;D1;H0:4])-[CH;D2;+0:5]=[CH;D2;+0:6]-[c:7]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "michael_addition",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-22_2"
+    },
+    {
       "template_hash": "9bafa9f7ca78cacc5afd1e7bbbd1392dfd7a7c97cd48e62296a4896eea6e9e75",
       "template": "[C;D1;H3:3]-[C:4](-[C;D1;H3:5])(-[C;D1;H3:6])-[O;H0;D2;+0:7]-[CH2;D2;+0:1]-[C;D1;H3:2]>>I-[CH2;D2;+0:1]-[C;D1;H3:2].[C;D1;H3:3]-[C:4](-[C;D1;H3:5])(-[C;D1;H3:6])-[OH;D1;+0:7]",
       "intro_chapter": 8,
@@ -5102,6 +5632,16 @@
       "reaction_family": "ether_synthesis",
       "conditions": "Base",
       "core_reaction_ids": "XLSX-016 | XLSX-006"
+    },
+    {
+      "template_hash": "9c352332068e6a01fc4674e6ed800838e5941d418c58c3f3fce7e12f3b458a6f",
+      "template": "[Br;H0;D1;+0:1]-[CH;D3;+0:3](-[C:2])-[C:4]=[C:5]>>Br-[Br;H0;D1;+0:1].[C:2]-[CH2;D2;+0:3]-[C:4]=[C:5]",
+      "intro_chapter": 5,
+      "instance_count": 1,
+      "reaction_family": "alkene_allylic_halogenation",
+      "conditions": "hv",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-29_3"
     },
     {
       "template_hash": "9c883743b14e799a746e931acb67db2e8bd52fd9b25310ec20045917abdc3982",
@@ -5230,6 +5770,16 @@
       "core_reaction_ids": "XLSX-022 | XLSX-023 | XLSX-024 | XLSX-025 | XLSX-026 | XLSX-027 | XLSX-028 | XLSX-017 | XLSX-018 | XLSX-019 | XLSX-020 | XLSX-021"
     },
     {
+      "template_hash": "9f4e008b2f0a867a29b718942a440f9cb4fa823fde18e5d1a1459714ad8a5633",
+      "template": "[C:2]-[C;H0;D3;+0:1](=[O;H0;D1;+0:3])-[OH;D1;+0:4]>>N#[C;H0;D2;+0:1]-[C:2].[OH2;D0;+0:3].[OH2;D0;+0:4]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "nitrile_hydrolysis",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-15_2"
+    },
+    {
       "template_hash": "9f54b413d1e507e6a6924b14fb8a0d2bc1321fdfe9bcca724a4a164da169e859",
       "template": "[Br;H0;D1;+0:1]-[C;H0;D4;+0:3](-[C:2])(-[C:4])-[C;D1;H3:5]>>Br-[Br;H0;D1;+0:1].[C:2]-[CH;D3;+0:3](-[C:4])-[C;D1;H3:5]",
       "intro_chapter": 2,
@@ -5273,6 +5823,16 @@
       "reaction_family": "heterocycle",
       "conditions": "HNO3",
       "core_reaction_ids": "XLSX-148 | XLSX-149 | XLSX-150 | XLSX-151 | XLSX-152 | XLSX-153 | XLSX-154 | XLSX-155 | XLSX-156 | XLSX-157 | XLSX-158 | XLSX-161 | XLSX-162 | XLSX-163 | XLSX-164 | XLSX-165 | XLSX-166 | XLSX-167"
+    },
+    {
+      "template_hash": "a11f862291fdbce78d09b3c324072ee838dea4471c277e456c1f3ab5bcd53c6f",
+      "template": "[C:3]-[CH;D2;+0:2]=[CH2;D1;+0:1]>>Br-[CH2;D2;+0:1]-[CH2;D2;+0:2]-[C:3]",
+      "intro_chapter": 4,
+      "instance_count": 3,
+      "reaction_family": "elimination_halide",
+      "conditions": "Base",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-17_2 | COURSE-18_2 | COURSE-20_2"
     },
     {
       "template_hash": "a1e66a4ba9dc565872b1e2fae16272dbe64bb89593550b7dbd1d5ae14f9bf7b5",
@@ -5383,6 +5943,16 @@
       "core_reaction_ids": "XLSX-090 | XLSX-091 | XLSX-092 | XLSX-093"
     },
     {
+      "template_hash": "a49812ad392d84046c13ed2b74c0b64026aeff69d18f28ef98bbbd36cc28a237",
+      "template": "[C:2]-[CH2;D2;+0:1]-[CH2;D2;+0:3]-[C:4]>>Br-[CH2;D2;+0:1]-[C:2].Br-[Mg]-[CH2;D2;+0:3]-[C:4]",
+      "intro_chapter": 4,
+      "instance_count": 1,
+      "reaction_family": "organometallic_coupling",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-19_3"
+    },
+    {
       "template_hash": "a5688f57c30af43f989712a915ba0f6d9d5a0388f69ea7430038edaa9ccd03eb",
       "template": "[Br;H0;D1;+0:4]-[CH;D3;+0:1](-[C;D1;H3:2])-[C;D1;H3:3]>>C-C-O-[CH;D3;+0:1](-[C;D1;H3:2])-[C;D1;H3:3].[BrH;D0;+0:4]",
       "intro_chapter": 2,
@@ -5491,6 +6061,16 @@
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
     },
     {
+      "template_hash": "a9820d7d0bb29f8a81e717637a969cff5d4f3321e8fc0c60b1425c496e241e2e",
+      "template": "[C;D1;H3:2]-[C:3](=[O;D1;H0:4])-[C;H0;D4;+0:5](-[C;D1;H3:6])(-[CH3;D1;+0:1])-[C:7](-[C;D1;H3:8])=[O;D1;H0:9]>>I-[CH3;D1;+0:1].[C;D1;H3:2]-[C:3](=[O;D1;H0:4])-[CH;D3;+0:5](-[C;D1;H3:6])-[C:7](-[C;D1;H3:8])=[O;D1;H0:9]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "carbonyl_alpha_alkylation",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-11_3"
+    },
+    {
       "template_hash": "a9da2aa9adc3c54cfbd0e49ffeb4083dba56bdf6eaac3037e3cab0aaa6f742cf",
       "template": "[C;D1;H3:2]-[CH;D3;+0:1](-[C;D1;H3:3])-[NH2;D1;+0:4]>>Cl-[CH;D3;+0:1](-[C;D1;H3:2])-[C;D1;H3:3].[NH3;D0;+0:4]",
       "intro_chapter": 10,
@@ -5543,6 +6123,16 @@
       "reaction_family": "alkane_halogenation",
       "conditions": "light or 250 °C above",
       "core_reaction_ids": "PDF-001 | PDF-002"
+    },
+    {
+      "template_hash": "aa5deba008485925ca7cc1911e6cc277c153d8aa6b6c0b5e5a6160455b6edc4a",
+      "template": "[C;D1;H3:1]-[CH;D3;+0:2](-[OH;D1;+0:3])-[c:4]>>[C;D1;H3:1]-[C;H0;D3;+0:2](=[O;H0;D1;+0:3])-[c:4]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "carbonyl_reduction",
+      "conditions": "LiAlH4",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-23_2_1"
     },
     {
       "template_hash": "aa7bcc71f8303376ea187677e05e31c9c7004769b6d82bf7291587d4ebe07c45",
@@ -5707,6 +6297,16 @@
       "core_reaction_ids": "PDF-067 | PDF-068 | PDF-069 | PDF-070 | PDF-071"
     },
     {
+      "template_hash": "b0ba47624b3831cd2f5f1741ddf2e4ce6564dcec7a45d3becb3ee83356f920cf",
+      "template": "[C;D1;H2:3]=[C:2]-[CH2;D2;+0:1]-[c;H0;D3;+0:4](:[c:5]):[c:6]>>Br-[CH2;D2;+0:1]-[C:2]=[C;D1;H2:3].Br-[Mg]-[c;H0;D3;+0:4](:[c:5]):[c:6]",
+      "intro_chapter": 4,
+      "instance_count": 1,
+      "reaction_family": "organometallic_coupling",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-24_3"
+    },
+    {
       "template_hash": "b12c15adc49c508d9a0620443574a4a7f1c04abd93f6a3fa685a1aa7a6ae6e71",
       "template": "[C;D1;H3:10]-[CH;D3;+0:11]1-[CH2;D2;+0:9]-[C;H0;D4;+0:7](-[C;D1;H3:8])(-[CH3;D1;+0:3])-[CH;D2;+0:6]=[C;H0;D3;+0:4](-[C;D1;H3:5])-[C;H0;D4;+0:2]-1(-[C;D1;H3:1])-[CH3;D1;+0:12]>>[C;D1;H3:1]-[C;H0;D3;+0:2](-[CH3;D1;+0:3])=[C;H0;D3;+0:4](-[C;D1;H3:5])-[CH;D2;+0:6]=[C;H0;D3;+0:7](-[C;D1;H3:8])-[CH3;D1;+0:9].[C;D1;H3:10]-[CH;D2;+0:11]=[CH2;D1;+0:12]",
       "intro_chapter": 5,
@@ -5831,6 +6431,16 @@
       "reaction_family": "friedel_crafts_acylation",
       "conditions": "AlCl3",
       "core_reaction_ids": "PDF-098 | PDF-099 | PDF-132"
+    },
+    {
+      "template_hash": "b52378582f81f279791695335f606b9704124e3d2272829173eb6f943fb75fe8",
+      "template": "[C;D1;H3:1]-[CH;D3;+0:2](-[C:3]=[O;D1;H0:4])-[CH2;D2;+0:5]-[OH;D1;+0:6]>>[C;D1;H3:1]-[CH2;D2;+0:2]-[C:3]=[O;D1;H0:4].[CH2;D1;+0:5]=[O;H0;D1;+0:6]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "aldol_condensation",
+      "conditions": "H+",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-12_1_2"
     },
     {
       "template_hash": "b523f6ac0c2a98d786a431e2e4fbd2408a98d5eb7fe7e720face75664dab594a",
@@ -6400,6 +7010,16 @@
       "core_reaction_ids": "XLSX-090 | XLSX-091 | XLSX-092 | XLSX-093"
     },
     {
+      "template_hash": "c3b28cf18cde0527863488a6402799b1838da6ad465d3e9696b3acd593740969",
+      "template": "[C;D1;H3:1]-[C:2](=[O;D1;H0:4])-[CH2;D2;+0:3]-[CH2;D2;+0:5]-[OH;D1;+0:6]>>[C;D1;H3:1]-[C:2](-[CH3;D1;+0:3])=[O;D1;H0:4].[CH2;D1;+0:5]=[O;H0;D1;+0:6]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "aldol_condensation",
+      "conditions": "H+",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-6_1"
+    },
+    {
       "template_hash": "c3c6add1c756370755a9a6cc67bdd767adfdab999c0a8b089f1f73c9b2501d41",
       "template": "[I;H0;D1;+0:4]-[CH2;D2;+0:2]-[C:1]-[OH;D1;+0:3]>>[C:1]1-[CH2;D2;+0:2]-[O;H0;D2;+0:3]-1.[IH;D0;+0:4]",
       "intro_chapter": 8,
@@ -6546,11 +7166,11 @@
     {
       "template_hash": "c7816578b535200d1801f506a1cd688f822154a2bae6277d64f7aa9e93c53901",
       "template": "[Br;H0;D1;+0:1]-[c;H0;D3;+0:3](:[c:2]):[c:4]>>Br-[Br;H0;D1;+0:1].[c:2]:[cH;D2;+0:3]:[c:4]",
-      "intro_chapter": 9,
+      "intro_chapter": 6,
       "instance_count": 1,
-      "reaction_family": "carbonyl_alpha_halogenation",
+      "reaction_family": "aromatic_halogenation",
       "conditions": "AlBr3",
-      "core_reaction_ids": "XLSX-053 | XLSX-054 | XLSX-055 | XLSX-067"
+      "core_reaction_ids": "PDF-090"
     },
     {
       "template_hash": "c7e9c4fe52b5a43b9d1b6c187ad80a7910a45e1a793c9033826e7b661c71f6dd",
@@ -6580,6 +7200,26 @@
       "core_reaction_ids": "XLSX-022 | XLSX-023 | XLSX-024 | XLSX-025 | XLSX-026 | XLSX-027 | XLSX-028 | XLSX-017 | XLSX-018 | XLSX-019 | XLSX-020 | XLSX-021"
     },
     {
+      "template_hash": "c8a837646587bdbfe4a719cbd1557437d0b78bf3c22f5c8836c6560e547467f4",
+      "template": "[#8:3]-[C:4](=[O;D1;H0:5])-[CH;D3;+0:6](-[CH2;D2;+0:1]-[C;D1;H3:2])-[C:7](-[C;D1;H3:8])=[O;D1;H0:9]>>I-[CH2;D2;+0:1]-[C;D1;H3:2].[#8:3]-[C:4](=[O;D1;H0:5])-[CH2;D2;+0:6]-[C:7](-[C;D1;H3:8])=[O;D1;H0:9]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "carbonyl_alpha_alkylation",
+      "conditions": "Base",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-16_1_1"
+    },
+    {
+      "template_hash": "c8b08e5016003abcc6aa714681940854d01dedc6c369a5b8f13c1147b314d4ec",
+      "template": "[C:1]-[C;H0;D3;+0:2](-[C:3])=[O;H0;D1;+0:4]>>[C:1]-[CH;D3;+0:2](-[C:3])-[OH;D1;+0:4]",
+      "intro_chapter": 7,
+      "instance_count": 4,
+      "reaction_family": "alcohol_oxidation",
+      "conditions": "PCC",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-21_5 | COURSE-3_3 | COURSE-5_5 | COURSE-9_1"
+    },
+    {
       "template_hash": "c8d7a47a3fbc1228efec16216be9f5cd8521ceb45990e3506955135ad5285d11",
       "template": "[C;D1;H3:1]-[C;H0;D4;+0:2]1(-[CH3;D1;+0:9])-[CH2;D2;+0:3]-[CH2;D2;+0:8]-[CH;D3;+0:7](-[CH3;D1;+0:10])-[CH;D2;+0:6]=[C;H0;D3;+0:4]-1-[C;D1;H3:5]>>[C;D1;H3:1]-[C;H0;D3;+0:2](-[CH3;D1;+0:3])=[C;H0;D3;+0:4](-[C;D1;H3:5])-[CH;D2;+0:6]=[CH;D2;+0:7]-[CH3;D1;+0:8].[CH2;D1;+0:9]=[CH2;D1;+0:10]",
       "intro_chapter": 5,
@@ -6605,6 +7245,16 @@
       "reaction_family": "elimination_halide",
       "conditions": "NaOEt",
       "core_reaction_ids": "PDF-010 | PDF-011 | PDF-035 | PDF-036"
+    },
+    {
+      "template_hash": "c91f9375fb016f3bc74e99f8cfa121c7c9ca92680291d91912353af1f4baa16d",
+      "template": "[O;D1;H0:5]=[C:4](-[O;D1;H1:6])-[C:3]-[CH2;D2;+0:1]-[O;D1;H1:2]>>O=[C;H0;D3;+0:1](-[O;D1;H1:2])-[C:3]-[C:4](=[O;D1;H0:5])-[O;D1;H1:6]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "carboxylic_acid_reduction",
+      "conditions": "LiAlH4",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-12_2_1"
     },
     {
       "template_hash": "c9466d0c199441b573549c21e1e711edaa198603e58b55a32f5582b6ac8fde4f",
@@ -6760,6 +7410,16 @@
       "core_reaction_ids": "PDF-117 | PDF-118 | PDF-121 | PDF-112 | PDF-113 | PDF-114 | PDF-115 | PDF-116 | PDF-119 | PDF-120"
     },
     {
+      "template_hash": "cc7e65ed10b17c386b86df33f9fabfb897a50b8992adee5a5ffef81e4d950c59",
+      "template": "[C:3]-[CH;D3;+0:4](-[OH;D1;+0:2])-[CH;D3;+0:5](-[C:6])-[OH;D1;+0:1]>>O=[Os](=O)(=[O;H0;D1;+0:1])=[O;H0;D1;+0:2].[C:3]-[CH;D2;+0:4]=[CH;D2;+0:5]-[C:6]",
+      "intro_chapter": 5,
+      "instance_count": 1,
+      "reaction_family": "alkene_oxidation",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-14_2"
+    },
+    {
       "template_hash": "cc92b942ec3c6ee5ed864d83f3d8aff2e94966d2e38b1ebe2ead88d989b601e8",
       "template": "[#7:3]-[N;H0;D2;+0:4]=[CH;D2;+0:1]-[C;D1;H3:2]>>O=[CH;D2;+0:1]-[C;D1;H3:2].[#7:3]-[NH2;D1;+0:4]",
       "intro_chapter": 9,
@@ -6776,6 +7436,16 @@
       "reaction_family": "carbonyl_organometallic",
       "conditions": "Base",
       "core_reaction_ids": "PDF-024 | PDF-018 | PDF-019 | PDF-020 | PDF-021 | PDF-022 | PDF-023"
+    },
+    {
+      "template_hash": "cd13d0dbeee2891cd8c9581ed65c926f6f913b0fcde7cac1093fda96f983cc6c",
+      "template": "[C:2]-[CH;D2;+0:1]=[CH;D2;+0:3]-[C:4]>>Br-[CH;D3;+0:1](-[C:2])-[CH2;D2;+0:3]-[C:4]",
+      "intro_chapter": 4,
+      "instance_count": 1,
+      "reaction_family": "elimination_halide",
+      "conditions": "Base",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-29_2"
     },
     {
       "template_hash": "cd27ac630014b68df63eb8aedf3483f4e9c81d96a4e127c8a68c32fc451be37a",
@@ -6850,6 +7520,16 @@
       "core_reaction_ids": "XLSX-022 | XLSX-023 | XLSX-024 | XLSX-025 | XLSX-026 | XLSX-027 | XLSX-028 | XLSX-017 | XLSX-018 | XLSX-019 | XLSX-020 | XLSX-021"
     },
     {
+      "template_hash": "ce8b2beb10e8ca327c38d9c66c80f51be8fa1c0cefdf00e8076e6112b0e86bca",
+      "template": "[#8:3]-[C:4](=[O;D1;H0:5])-[CH;D3;+0:6](-[CH2;D2;+0:1]-[C:2])-[C:7](-[C;D1;H3:8])=[O;D1;H0:9]>>I-[CH2;D2;+0:1]-[C:2].[#8:3]-[C:4](=[O;D1;H0:5])-[CH2;D2;+0:6]-[C:7](-[C;D1;H3:8])=[O;D1;H0:9]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "carbonyl_alpha_alkylation",
+      "conditions": "Base",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-16_1_2"
+    },
+    {
       "template_hash": "ce9a58f763bbb940eccb843ad4aeaf07f10e0f1d56debdd8c415d1481aa4195b",
       "template": "[C:4]-[O;H0;D2;+0:5]-[CH;D3;+0:1](-[C;D1;H3:2])-[C;D1;H3:3]>>I-[CH;D3;+0:1](-[C;D1;H3:2])-[C;D1;H3:3].[C:4]-[OH;D1;+0:5]",
       "intro_chapter": 8,
@@ -6868,6 +7548,16 @@
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
     },
     {
+      "template_hash": "ceb334bccd04eb2733e7cb16a3b66475c9c659b8c3ab97210e1f32849b85cfab",
+      "template": "[C:2]-[CH2;D2;+0:1]-[C:3](=[O;D1;H0:4])-[O;D1;H1:5]>>O-C(=O)-[CH;D3;+0:1](-[C:2])-[C:3](=[O;D1;H0:4])-[O;D1;H1:5]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "decarboxylation",
+      "conditions": "H2O,NaOH",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-22_6"
+    },
+    {
       "template_hash": "cec8106ba0c8e1bb6bb2a490ee4dd15ccda8eaf811d179ec0a24902c8a2741d1",
       "template": "[C;D1;H3:2]-[C;H0;D3;+0:1](-[C;D1;H3:3])=[C;H0;D3;+0:4](-[C;D1;H3:5])-[C;D1;H3:6]>>Cl-[C;H0;D4;+0:1](-[C;D1;H3:2])(-[C;D1;H3:3])-[CH;D3;+0:4](-[C;D1;H3:5])-[C;D1;H3:6]",
       "intro_chapter": 4,
@@ -6875,6 +7565,16 @@
       "reaction_family": "elimination_halide",
       "conditions": "",
       "core_reaction_ids": "PDF-010 | PDF-011 | PDF-035 | PDF-036"
+    },
+    {
+      "template_hash": "cede9af933637803b45d04950e9beb03fe9cb322b82fee51ebf3fa2b2bd140e9",
+      "template": "[C:2]-[CH;D3;+0:1](-[C:3])-[C:4](=[O;D1;H0:5])-[O;D1;H1:6]>>C-C(=O)-[C;H0;D4;+0:1](-[C:2])(-[C:3])-[C:4](=[O;D1;H0:5])-[O;D1;H1:6]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "decarboxylation",
+      "conditions": "H2O,NaOH",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-16_4_1"
     },
     {
       "template_hash": "cedfa8f1e43ce1dbf0a8a4c1bde46f18e7b0a247dcf31b4c2f6d5b2c2b0dc12b",
@@ -7165,6 +7865,16 @@
       "core_reaction_ids": "PDF-024 | PDF-018 | PDF-019 | PDF-020 | PDF-021 | PDF-022 | PDF-023"
     },
     {
+      "template_hash": "d815f099d206f6635ff409fd6bc7af1bf9b6153dabd4c19c6b9dc46bf7e7ce84",
+      "template": "[C:1]-[CH;D2;+0:2]=[O;H0;D1;+0:3]>>[C:1]-[CH2;D2;+0:2]-[OH;D1;+0:3]",
+      "intro_chapter": 7,
+      "instance_count": 2,
+      "reaction_family": "alcohol_oxidation",
+      "conditions": "PCC",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-21_1 | COURSE-5_1"
+    },
+    {
       "template_hash": "d860928ff39e7385ee3d58bea5f476dd65b8a549628948a3d5deea5287fca94b",
       "template": "[C;D1;H3:1]-[C;H0;D3;+0:2](=[O;D1;H0:3])-[NH;D2;+0:6]-[CH2;D2;+0:4]-[C;D1;H3:5]>>[C;D1;H3:1]-[C;H0;D3;+0:2](=[O;D1;H0:3])-[CH2;D2;+0:4]-[C;D1;H3:5].[N-]=[N+]=[NH;D1;+0:6]",
       "intro_chapter": 9,
@@ -7244,6 +7954,16 @@
       "reaction_family": "cyclopropane_reaction",
       "conditions": "Cl2, FeCl3",
       "core_reaction_ids": "PDF-003 | PDF-004 | PDF-005 | PDF-006"
+    },
+    {
+      "template_hash": "dbf517883ca6db6a84fa0554c270d4215e96e47b6ce07d3d8fcc9ea3e0a09677",
+      "template": "[C;D1;H3:1]-[CH;D3;+0:2]1-[CH2;D2;+0:8]-[CH;D2;+0:7]=[CH;D2;+0:6]-[CH2;D2;+0:5]-[CH;D3;+0:3]-1-[C;D1;H3:4]>>[C;D1;H3:1]-[CH;D2;+0:2]=[CH;D2;+0:3]-[C;D1;H3:4].[CH2;D1;+0:5]=[CH;D2;+0:6]-[CH;D2;+0:7]=[CH2;D1;+0:8]",
+      "intro_chapter": 5,
+      "instance_count": 1,
+      "reaction_family": "diels_alder",
+      "conditions": "heat",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-14_1"
     },
     {
       "template_hash": "dc33eb70b9eb4d3ee1584c2f62c47aa8b37a6f6cdc05c82948e954d5e9cea07a",
@@ -7334,6 +8054,16 @@
       "reaction_family": "epoxide_opening",
       "conditions": "Base",
       "core_reaction_ids": "XLSX-022 | XLSX-023 | XLSX-024 | XLSX-025 | XLSX-026 | XLSX-027 | XLSX-028 | XLSX-017 | XLSX-018 | XLSX-019 | XLSX-020 | XLSX-021"
+    },
+    {
+      "template_hash": "de68fa794503521ee7b3018d509063fe551f493f4dc01b6cb193d9826b3adb2c",
+      "template": "[Br;H0;D1;+0:1]-[CH;D3;+0:4](-[C:3])-[CH2;D2;+0:5]-[Br;H0;D1;+0:2]>>[Br;H0;D1;+0:1]-[Br;H0;D1;+0:2].[C:3]-[CH;D2;+0:4]=[CH2;D1;+0:5]",
+      "intro_chapter": 5,
+      "instance_count": 1,
+      "reaction_family": "alkene_halogen_addition",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-20_3"
     },
     {
       "template_hash": "de83d7fc6e7467e152729e34304c59e51b15d73aebb35b83eb9f5e2c70d0a39d",
@@ -7460,6 +8190,16 @@
       "reaction_family": "diels_alder",
       "conditions": "heating",
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
+    },
+    {
+      "template_hash": "e16b4e2aa5bf26f60de36d86bf3ff91626a99dbcb6783f616443d1ff759a4c0e",
+      "template": "[#8:3]-[C:4](=[O;D1;H0:5])-[C;H0;D4;+0:6](-[C:7])(-[CH2;D2;+0:1]-[C:2])-[C:8](-[C;D1;H3:9])=[O;D1;H0:10]>>I-[CH2;D2;+0:1]-[C:2].[#8:3]-[C:4](=[O;D1;H0:5])-[CH;D3;+0:6](-[C:7])-[C:8](-[C;D1;H3:9])=[O;D1;H0:10]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "carbonyl_alpha_alkylation",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-16_2_1"
     },
     {
       "template_hash": "e1ee588abaffd312da1ddcbe6dfbc916b342f4539e99c85b86a1cce6cf3d5f8e",
@@ -7849,6 +8589,16 @@
       "core_reaction_ids": "XLSX-148 | XLSX-149 | XLSX-150 | XLSX-151 | XLSX-152 | XLSX-153 | XLSX-154 | XLSX-155 | XLSX-156 | XLSX-157 | XLSX-158 | XLSX-161 | XLSX-162 | XLSX-163 | XLSX-164 | XLSX-165 | XLSX-166 | XLSX-167"
     },
     {
+      "template_hash": "eeb656b0b3beed7f9e9d29a44ad0a46a92627164c1e108c2024a77addf43c5d7",
+      "template": "[C:4]-[NH;D2;+0:5]-[C;H0;D3;+0:1](-[C;D1;H3:2])=[O;D1;H0:3]>>Br-[C;H0;D3;+0:1](-[C;D1;H3:2])=[O;D1;H0:3].[C:4]-[NH2;D1;+0:5]",
+      "intro_chapter": 9,
+      "instance_count": 1,
+      "reaction_family": "amide_formation",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-8_2"
+    },
+    {
       "template_hash": "eeb8db2dd4673d11431592e47e37eda64306683e08e90d290d03ba02457973f4",
       "template": "[Br;H0;D1;+0:1]-[CH2;D2;+0:3]-[CH2;D2;+0:4]-[Br;H0;D1;+0:2]>>[Br;H0;D1;+0:1]-[Br;H0;D1;+0:2].[CH2;D1;+0:3]=[CH2;D1;+0:4]",
       "intro_chapter": 5,
@@ -7964,6 +8714,16 @@
       "reaction_family": "diels_alder",
       "conditions": "heating",
       "core_reaction_ids": "PDF-058 | PDF-059 | PDF-060"
+    },
+    {
+      "template_hash": "f289839bed3d70c83c80f07d0de2bd80cf1a9af469fe199c37effbd65ca06ece",
+      "template": "[C:1]-[CH2;D2;+0:2]-[CH3;D1;+0:3]>>[C:1]-[CH;D2;+0:2]=[CH2;D1;+0:3]",
+      "intro_chapter": 5,
+      "instance_count": 1,
+      "reaction_family": "alkene_hydrogenation",
+      "conditions": "H2,Ni",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-18_3"
     },
     {
       "template_hash": "f2bb27cc3abcb9b6478b463c50bcf876c8cd7281217be854b4f732edfd96f094",
@@ -8290,6 +9050,16 @@
       "core_reaction_ids": "PDF-001 | PDF-002"
     },
     {
+      "template_hash": "fdc9fd4cf770485a1143e6f2ab3ff595d9184e49625734be6f756aa35e4d59b3",
+      "template": "[#7;a:1]:[c;H0;D3;+0:2](:[c:3])-[N+;H0;D3:4](-[O-;H0;D1:6])=[O;D1;H0:5]>>[#7;a:1]:[cH;D2;+0:2]:[c:3].[O-]-[N+;H0;D3:4](=[O;D1;H0:5])-[OH;D1;+0:6]",
+      "intro_chapter": 11,
+      "instance_count": 1,
+      "reaction_family": "heterocycle",
+      "conditions": "",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-7_2"
+    },
+    {
       "template_hash": "fe7334818090fb0c1a1ddd886bdf60bfb729c6895c59652b1ab7689a3baae6c6",
       "template": "[CH3;D1;+0:4]-[CH2;D2;+0:3]-[#8:1]-[CH2;D2;+0:2]-[CH2;D2;+0:5]-[O;D1;H1:6]>>[#8:1]1-[CH2;D2;+0:2]-[CH2;D2;+0:3]-1.[CH3;D1;+0:4]-[CH2;D2;+0:5]-[O;D1;H1:6]",
       "intro_chapter": 8,
@@ -8384,9 +9154,23 @@
       "template": "[O;D1;H0:3]=[C:2]-[OH;D1;+0:1]>>C-C-[O;H0;D2;+0:1]-[C:2]=[O;D1;H0:3]",
       "intro_chapter": 9,
       "instance_count": 1,
-      "reaction_family": "carbonyl_alpha_halogenation",
+      "reaction_family": "carboxyl_derivative_hydrolysis",
       "conditions": "NaOH",
-      "core_reaction_ids": "XLSX-053 | XLSX-054 | XLSX-055 | XLSX-067"
+      "core_reaction_ids": "XLSX-077 | XLSX-078 | XLSX-079 | XLSX-080"
+    },
+    {
+      "template_hash": "ffcd64f91cf2b656000d42ff9040f8ed30b57e2336201d239ab8212d39fc9025",
+      "template": "[Br;H0;D1;+0:1]-[Mg;H0;D2;+0:4]-[CH2;D2;+0:2]-[C:3]>>[Br;H0;D1;+0:1]-[CH2;D2;+0:2]-[C:3].[Mg;H0;D0;+0:4]",
+      "intro_chapter": 4,
+      "instance_count": 5,
+      "reaction_family": "organometallic_formation",
+      "conditions": "Et2O",
+      "core_reaction_ids": "",
+      "source_answer_step_ids": "COURSE-19_2 | COURSE-21_3 | COURSE-28_4 | COURSE-32_1 | COURSE-5_3"
     }
-  ]
+  ],
+  "release_note": "The chapter library includes 105 replay-validated template instances derived from the annotated course-exercise routes.",
+  "answer_informed_augmentation": true,
+  "augmentation_template_instances": 105,
+  "augmentation_unique_templates": 78
 }

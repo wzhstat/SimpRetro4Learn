@@ -139,7 +139,7 @@ def softmax(values: Sequence[float]) -> list[float]:
 
 
 class CurriculumSingleStepPredictor:
-    """Execute library-1270 templates assigned to explicitly selected chapters."""
+    """Execute chapter-assigned templates from explicitly selected chapters."""
 
     def __init__(
         self,
@@ -244,6 +244,7 @@ class CurriculumSingleStepPredictor:
                     "instance_count": int(record["instance_count"]),
                     "reaction_family": record.get("reaction_family", ""),
                     "core_reaction_ids": record.get("core_reaction_ids", ""),
+                    "source_answer_step_ids": record.get("source_answer_step_ids", ""),
                     "conditions": record.get("conditions", ""),
                     "score": float(score),
                     "score_components": components,
@@ -294,7 +295,7 @@ class CurriculumSingleStepPredictor:
             "product_canonical": product_canonical,
             "requested_chapters": list(self.chapters),
             "snapshot_definition": (
-                "library-1270 templates assigned only to the explicitly requested chapters"
+                "templates assigned only to the explicitly requested chapters"
             ),
             "library_version": "library_1270",
             "stock_file": self.stock_path.name,
@@ -325,7 +326,7 @@ class CurriculumSingleStepPredictor:
 
 
 def print_predictions(result: dict[str, Any]) -> None:
-    print("\nSingle-step retrosynthesis (library 1270)")
+    print("\nSingle-step retrosynthesis (chapter template library)")
     print(f"Product: {result['product_canonical']}")
     chapters = ", ".join(map(str, result["requested_chapters"]))
     print(f"Chapters: {chapters} (explicit selection)")
@@ -351,8 +352,8 @@ def print_predictions(result: dict[str, Any]) -> None:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Library-1270 single-step retrosynthesis using templates from explicitly "
-            "selected course chapters."
+            "Single-step retrosynthesis using templates from explicitly selected "
+            "course chapters."
         )
     )
     parser.add_argument("-p", "--product", help="Product SMILES. Prompted if omitted.")

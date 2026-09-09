@@ -236,7 +236,7 @@ def main():
     
     # Basic parameters
     parser.add_argument("-s", "--smiles", type=str, default="CC(=O)C=C(C)C", help="Target SMILES string (default: CC(=O)C=C(C)C)")
-    parser.add_argument("-db", "--database", type=str, default="emol_under_1_carbons", help="In-stock database name (default: emol_under_0)")
+    parser.add_argument("-db", "--database", type=str, default="emol_under_1_carbons", help="In-stock database name (default: emol_under_1_carbons)")
     parser.add_argument("-o", "--output", type=str, default="retro_result.json", help="Output JSON file path (default: retro_result.json)")
     
     # Custom templates
