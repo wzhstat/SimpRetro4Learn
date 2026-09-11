@@ -100,32 +100,33 @@ python main.py \
 
 All dependencies are installed once with `pip install -r requirements.txt` during installation.
 
-First, add one generic forward reaction per row to `template_generator/demo_reactions.csv`.
+First, add one generic forward reaction per row to `template_generator/Core_reactions.csv`.
 
-| CSV column | Meaning |
-|---|---|
-| `reaction_id` | Unique reaction ID. |
-| `reaction_name` | Reaction name. |
-| `reaction` | Reaction SMILES, e.g. `[R]C(Cl)=O>>[R]C(O)=O`. |
-| `R1` | Allowed classes for `[R]` or `[R1]`, separated by semicolons. |
-| `R2` | Allowed classes for `[R2]`; leave blank if unused. |
-| `atom_source` | Source of a newly added heavy atom, e.g. `O` for water. |
-| `condition` | Reaction conditions. |
-| `source` | Textbook or other reaction source. |
-| `chapter` | Course chapter. |
+| CSV column      | Meaning                                                       |
+| --------------- | ------------------------------------------------------------- |
+| `reaction_id`   | Unique reaction ID.                                           |
+| `reaction_name` | Reaction name.                                                |
+| `Reactant`      | Reactant side of the generic reaction for review.             |
+| `Product`       | Product side of the generic reaction for review.              |
+| `reaction`      | Reaction SMILES, e.g. `[R]C(Cl)=O>>[R]C(O)=O`.                |
+| `R1`            | Allowed classes for `[R]` or `[R1]`, separated by semicolons. |
+| `R2`, `R3`      | Allowed classes for additional R positions; leave blank if unused. |
+| `condition`     | Reaction conditions.                                          |
+| `source`        | Textbook or other reaction source.                            |
+| `chapter`       | Course chapter.                                               |
 
-Allowed R classes are `methyl`, `primary`, `secondary`, `tertiary`, and `aryl`.
+Allowed R classes are `H`, `methyl`, `primary`, `secondary`, `tertiary`, `aryl`, `alkenyl`, `alkynyl`, `benzyl`, `secondary_benzylic`, `allyl`, `secondary_allylic`, `propargyl`, and `cycloalkyl`. The `[X]` placeholder is automatically expanded using `F`, `Cl`, `Br`, and `I`.
 
 1. Expand the generic reactions:
 
 ```bash
 python template_generator/generate_templates.py expand \
-  --input template_generator/Core_reactions.csv \
-  --output template_generator/output/preprocessed_data.csv \
-  --max-combinations 100000
+    --input template_generator/Core_reactions.csv \
+    --output template_generator/output/demo/preprocessed_data.csv \
+    --max-combinations 100000
 ```
 
-2. Open `preprocessed_data.csv` and check the generated reactants, products, R-group selections, conditions, sources, and chapters. Correct or remove unsuitable rows before continuing. Keep every `_id` unique.
+2. Open `preprocessed_data.csv` and check the concrete reactants, products, R-group selections, conditions, sources, and chapters. Correct or remove unsuitable rows before continuing. Keep every `_id` unique.
 
 3. Atom-map the checked reactions and extract radius-1 templates:
 
@@ -142,3 +143,4 @@ The extraction stage adds the mapped reactions and extracted SMARTS to `preproce
 - `template_condition.json`: reaction conditions associated with each template.
 
 Add `--add-radius-0` to the extraction command when both radius-0 and radius-1 templates are required. Use `--jobs N` to set the number of parallel extraction workers.
+
