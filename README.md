@@ -120,8 +120,9 @@ Allowed R classes are `methyl`, `primary`, `secondary`, `tertiary`, and `aryl`.
 
 ```bash
 python template_generator/generate_templates.py expand \
-    --input template_generator/demo_reactions.csv \
-    --output template_generator/output/demo/preprocessed_data.csv
+  --input template_generator/Core_reactions.csv \
+  --output template_generator/output/preprocessed_data.csv \
+  --max-combinations 100000
 ```
 
 2. Open `preprocessed_data.csv` and check the generated reactants, products, R-group selections, conditions, sources, and chapters. Correct or remove unsuitable rows before continuing. Keep every `_id` unique.
